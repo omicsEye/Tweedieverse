@@ -1,0 +1,148 @@
+---
+title: "Biomarkers and Pathways for COVID-19"
+author: 
+  - Ali Rahnavard
+  - Chiraag Gohel
+format: html
+---
+
+## Setup
+
+1. Create a new R Project
+2. Within that R Project, create a directory titled `data/`
+3. Save the required data files for this vignette to that directory from [here](https://www.dropbox.com/sh/gy2ul4h36ko5rne/AADpGXEyNbYmL-0ujJzCbyUYa?dl=0)
+
+## Tweedieverse
+
+We first install `Tweedieverse` from GitHub and load the package.
+
+```{r, eval = F}
+devtools::install_github("himelmallick/Tweedieverse")
+library(Tweedieverse)
+```
+
+We then load the metabolomics data that we wish to analyze.
+
+```{r, eval = F}
+metadata <- read.table(
+  'data/metabolites_metadata.txt',
+  sep = '\t',
+  header = TRUE,
+  fill = FALSE,
+  comment.char = "" ,
+  check.names = FALSE,
+  row.names = 1
+)
+
+metabolites <- read.delim(
+  'data/metabolites.txt',
+  sep = '\t',
+  header = TRUE,
+  fill = T,
+  comment.char = "" ,
+  check.names = F,
+  row.names = 1
+)
+```
+
+### Running Tweedieverse
+
+`Tweedieverse()` requires the observational data alongside the metadata, a directory path for results, and takes optional parameters for displaying results.
+
+```{r, eval = F}
+# imputation strategy
+metabolites[is.na(metabolites)] <- 0 #min(metabolites, na.rm = T)/2.0
+
+dir.create("analysis")
+
+Tweedieverse(
+  metabolites,
+  metadata,
+  'analysis/my_metabolites_Tweedieverse',
+  max_significance = 0.1,
+  plot_heatmap = T,
+  plot_scatter = T,
+  standardize = F
+)
+```
+
+## omePath
+
+Again, we start with installing and loading `omePath`
+
+```{r, eval = F}
+devtools::install_github('omicsEye/omePath', force = TRUE)
+```
+
+```{r, eval = F}
+library(omePath)
+```
+
+omePath requires:
+
+1. Output from a `Tweedieverse` run
+2. Metadata associated with the `Tweedieverse` input
+3. A mapping file that links compounds of interest to pathways
+
+```{r, eval = F}
+metabolites_Tweedieverse <- read.delim(
+  "analysis/my_metabolites_Tweedieverse/all_results.tsv",
+  sep = '\t',
+  header = T,
+  fill = F,
+  comment.char = "" ,
+  check.names = F,
+  #row.names = NA
+)
+
+mapper_file <- read.delim(
+  "data/MetaboliteStudyListwithHMDBID.csv",
+  sep = ',',
+  header = T,
+  fill = F,
+  comment.char = "" ,
+  check.names = F,
+  #row.names = NA
+)
+
+mapper <- read.delim(
+  "data/smpdb_metabolites.tsv",
+  sep = '\t',
+  header = T,
+  fill = F,
+  comment.char = "" ,
+  check.names = F,
+  #row.names = NA
+)
+score_data_severe <- metabolites_Tweedieverse[metabolites_Tweedieverse$metadata=="Group" & metabolites_Tweedieverse$value=="Severe" ,]
+rownames(score_data_severe) <- score_data_severe$feature
+
+score_data_severe$HMDB <- mapper_file[match(score_data_severe$feature, mapper_file$Query), "HMDB"]
+score_data_severe <- score_data_severe[!is.na(score_data_severe$HMDB) & score_data_severe$feature !="2-hydroxyhippurate (salicylurate)",]
+rownames(score_data_severe) <- score_data_severe$HMDB
+```
+
+We then run `omePath()`, specifying various parameters.
+
+```{r, eval = F}
+omePath(
+  input_data = score_data_severe,
+  input_metadata = NA,
+  meta <- NA,
+  output = "analysis/my_deepath_enrichment_metabolite_severe_fdr1_ks",
+  score_col = 'coef',
+  pval_threshold = 0.05,
+  fdr_threshold = NA,
+  Pathway.Subject = NA,#'Metabolic',
+  do_plot = TRUE,
+  mapper_file = "data/smpdb_metabolites.tsv",
+  method = "ks",
+  min_member = 2,
+  pathway_col = "Pathway",
+  feature_col = "Feature")
+```
+
+
+
+
+
