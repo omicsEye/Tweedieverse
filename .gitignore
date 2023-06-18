@@ -6,7 +6,7 @@
 .RData
 
 data/
-analysis/
+
 # User-specific files
 .Ruserdata
 

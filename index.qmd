@@ -3,14 +3,20 @@ title: "Biomarkers and Pathways for COVID-19"
 author: 
   - Ali Rahnavard
   - Chiraag Gohel
-format: html
+format: 
+  html:
+    theme: flatly
+    toc: true
+    title-block-banner: true
 ---
 
 ## Setup
 
-1. Create a new R Project
-2. Within that R Project, create a directory titled `data/`
-3. Save the required data files for this vignette to that directory from [here](https://www.dropbox.com/sh/gy2ul4h36ko5rne/AADpGXEyNbYmL-0ujJzCbyUYa?dl=0)
+1. Pull this repository from [GitHub](https://github.com/omicsEye/Tweedieverse)
+2. Open `Tweedieverse.Rproj` to open the project
+3. Within that R Project, create a directory titled `data/`
+4. Save the required data files for this vignette to that directory from [here](https://www.dropbox.com/sh/gy2ul4h36ko5rne/AADpGXEyNbYmL-0ujJzCbyUYa?dl=0)
+5. Create a new R script to follow along!
 
 ## Tweedieverse
 
@@ -122,7 +128,7 @@ score_data_severe <- score_data_severe[!is.na(score_data_severe$HMDB) & score_da
 rownames(score_data_severe) <- score_data_severe$HMDB
 ```
 
-We then run `omePath()`, specifying various parameters.
+We then run `omePath()`, specifying various parameters. `omePath` can take a while to run! We have provided the results already in the `analysis` folder.
 
 ```{r, eval = F}
 omePath(

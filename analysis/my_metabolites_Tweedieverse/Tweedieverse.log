@@ -1,0 +1,1118 @@
+2023-06-18 11:49:09.483781 INFO::Writing function arguments to log file
+2023-06-18 11:49:09.484995 DEBUG::Function arguments
+2023-06-18 11:49:09.485307 DEBUG::Output folder: analysis/my_metabolites_Tweedieverse
+2023-06-18 11:49:09.485588 DEBUG::Abundance threshold: 0.000000
+2023-06-18 11:49:09.48585 DEBUG::Prevalence threshold: 0.100000
+2023-06-18 11:49:09.486112 DEBUG::Variance threshold: 0.000000
+2023-06-18 11:49:09.486368 DEBUG::Base model: CPLM
+2023-06-18 11:49:09.486623 DEBUG::Link function: log
+2023-06-18 11:49:09.486864 DEBUG::Fixed effects:
+2023-06-18 11:49:09.487086 DEBUG::Random effects:
+2023-06-18 11:49:09.487297 DEBUG::ZSCP cutoff: 0.300000
+2023-06-18 11:49:09.487503 DEBUG::ZACP criteria: BIC
+2023-06-18 11:49:09.48771 DEBUG::Offset adjustment: TRUE
+2023-06-18 11:49:09.48792 DEBUG::Scale factor:
+2023-06-18 11:49:09.488133 DEBUG::Max significance: 0.100000
+2023-06-18 11:49:09.488337 DEBUG::Correction method: BH
+2023-06-18 11:49:09.488547 DEBUG::Standardize: FALSE
+2023-06-18 11:49:09.488746 DEBUG::Cores: 1
+2023-06-18 11:49:09.488947 DEBUG::Optimization routine: nlminb
+2023-06-18 11:49:09.48915 INFO::Determining format of input files
+2023-06-18 11:49:09.489967 INFO::Input format is data samples as columns and metadata samples as rows
+2023-06-18 11:49:09.68515 DEBUG::linked data so samples are rows
+2023-06-18 11:49:09.685493 DEBUG::The following samples were found to have metadata but no features. They will be removed. X2-2,X2-3,X2-8,X2-9,X2-11,X2-20,X2-21,X2-22,X2-23,X2-24,X2-26,X2-28,X2-7,X2-13,X2-14,X2-16,X2-18,X2-19,X2-12,HC26,HC27,HC28
+2023-06-18 11:49:09.685704 DEBUG::A total of 96 samples were found in both the data and metadata
+2023-06-18 11:49:09.685834 DEBUG::Reordering data/metadata to use same sample ordering
+2023-06-18 11:49:09.689659 INFO::Filter data based on min abundance and min prevalence
+2023-06-18 11:49:09.690336 INFO::Total samples in data: 96
+2023-06-18 11:49:09.690832 INFO::Min samples required with min abundance for a feature not to be filtered: 9.600000
+2023-06-18 11:49:09.696453 INFO::Total filtered features with prevalence-abundance filtering: 27
+2023-06-18 11:49:09.697013 INFO::Filtered feature names: 2-hydroxyibuprofen, 3-(N-acetyl-L-cystein-S-yl) acetaminophen, carboxyibuprofen, clarithromycin, furosemide, ginkgolic acid C15:1, Gliclazide, HEPES, hydroxypioglitazone (M-IV), ibuprofen, ketopioglitazone, lidocaine, metformin, N4-acetyl-5-hydroxysulfamethoxazole*, N4-acetylsulfamethoxazole*, N-ethylglycinexylidide, omeprazole, oseltamivir, oseltamivir carboxylate, pantoprazole, phenolphthalein beta-D-glucuronide, phenylbutazone, pioglitazone, pseudoephedrine, ribavirin, salicyluric glucuronide*, valsartan
+2023-06-18 11:49:09.707115 INFO::Total filtered features with variance filtering: 0
+2023-06-18 11:49:09.707763 INFO::Filtered feature names:
+2023-06-18 11:49:09.711344 INFO::Excluded metadata with entropy less or equal to 0:
+2023-06-18 11:49:09.711864 INFO::Formula for fixed effects: expr ~  Group + Sex + Age + BMI
+2023-06-18 11:49:09.712305 INFO::Bypass z-score application to metadata
+2023-06-18 11:49:09.712794 INFO::Running selected analysis method: CPLM
+2023-06-18 11:49:09.714033 INFO::Fitting model to feature number 1, (14 or 15)-methylpalmitate (a17:0 or i17:0)
+2023-06-18 11:49:10.294371 INFO::Fitting model to feature number 2, (16 or 17)-methylstearate (a19:0 or i19:0)
+2023-06-18 11:49:10.462927 INFO::Fitting model to feature number 3, (2 or 3)-decenoate (10:1n7 or n8)
+2023-06-18 11:49:10.501614 INFO::Fitting model to feature number 4, (2,4 or 2,5)-dimethylphenol sulfate
+2023-06-18 11:49:10.536496 INFO::Fitting model to feature number 5, (R)-3-hydroxybutyrylcarnitine
+2023-06-18 11:49:10.56927 INFO::Fitting model to feature number 6, (S)-3-hydroxybutyrylcarnitine
+2023-06-18 11:49:10.579183 WARNING::Fitting problem for feature 6 returning NA
+2023-06-18 11:49:10.579987 INFO::Fitting model to feature number 7, (S)-a-amino-omega-caprolactam
+2023-06-18 11:49:10.58862 WARNING::Fitting problem for feature 7 returning NA
+2023-06-18 11:49:10.589327 INFO::Fitting model to feature number 8, 1-(1-enyl-oleoyl)-GPE (P-18:1)*
+2023-06-18 11:49:10.598497 WARNING::Fitting problem for feature 8 returning NA
+2023-06-18 11:49:10.599256 INFO::Fitting model to feature number 9, 1-(1-enyl-palmitoyl)-2-arachidonoyl-GPC (P-16:0/20:4)*
+2023-06-18 11:49:11.279702 INFO::Fitting model to feature number 10, 1-(1-enyl-palmitoyl)-2-arachidonoyl-GPE (P-16:0/20:4)*
+2023-06-18 11:49:11.328148 INFO::Fitting model to feature number 11, 1-(1-enyl-palmitoyl)-2-linoleoyl-GPC (P-16:0/18:2)*
+2023-06-18 11:49:11.873255 INFO::Fitting model to feature number 12, 1-(1-enyl-palmitoyl)-2-linoleoyl-GPE (P-16:0/18:2)*
+2023-06-18 11:49:11.881886 WARNING::Fitting problem for feature 12 returning NA
+2023-06-18 11:49:11.882907 INFO::Fitting model to feature number 13, 1-(1-enyl-palmitoyl)-2-oleoyl-GPC (P-16:0/18:1)*
+2023-06-18 11:49:12.18034 INFO::Fitting model to feature number 14, 1-(1-enyl-palmitoyl)-2-oleoyl-GPE (P-16:0/18:1)*
+2023-06-18 11:49:12.187839 WARNING::Fitting problem for feature 14 returning NA
+2023-06-18 11:49:12.188569 INFO::Fitting model to feature number 15, 1-(1-enyl-palmitoyl)-2-palmitoleoyl-GPC (P-16:0/16:1)*
+2023-06-18 11:49:12.196144 WARNING::Fitting problem for feature 15 returning NA
+2023-06-18 11:49:12.196832 INFO::Fitting model to feature number 16, 1-(1-enyl-palmitoyl)-2-palmitoyl-GPC (P-16:0/16:0)*
+2023-06-18 11:49:12.561322 INFO::Fitting model to feature number 17, 1-(1-enyl-palmitoyl)-GPC (P-16:0)*
+2023-06-18 11:49:12.906444 INFO::Fitting model to feature number 18, 1-(1-enyl-palmitoyl)-GPE (P-16:0)*
+2023-06-18 11:49:13.046146 INFO::Fitting model to feature number 19, 1-(1-enyl-stearoyl)-2-arachidonoyl-GPE (P-18:0/20:4)*
+2023-06-18 11:49:13.318364 INFO::Fitting model to feature number 20, 1-(1-enyl-stearoyl)-2-linoleoyl-GPE (P-18:0/18:2)*
+2023-06-18 11:49:13.540152 INFO::Fitting model to feature number 21, 1-(1-enyl-stearoyl)-2-oleoyl-GPE (P-18:0/18:1)
+2023-06-18 11:49:13.548909 WARNING::Fitting problem for feature 21 returning NA
+2023-06-18 11:49:13.549888 INFO::Fitting model to feature number 22, 1-(1-enyl-stearoyl)-GPE (P-18:0)*
+2023-06-18 11:49:13.632145 INFO::Fitting model to feature number 23, 1,2-dilinoleoyl-GPC (18:2/18:2)
+2023-06-18 11:49:14.505124 INFO::Fitting model to feature number 24, 1,2-dipalmitoyl-GPC (16:0/16:0)
+2023-06-18 11:49:16.215302 INFO::Fitting model to feature number 25, 1,5-anhydroglucitol (1,5-AG)
+2023-06-18 11:49:16.250144 INFO::Fitting model to feature number 26, 1,7-dimethylurate
+2023-06-18 11:49:16.28349 INFO::Fitting model to feature number 27, 10-heptadecenoate (17:1n7)
+2023-06-18 11:49:16.762532 INFO::Fitting model to feature number 28, 10-nonadecenoate (19:1n9)
+2023-06-18 11:49:17.01759 INFO::Fitting model to feature number 29, 10-undecenoate (11:1n1)
+2023-06-18 11:49:17.163314 INFO::Fitting model to feature number 30, 11beta-hydroxyandrosterone glucuronide
+2023-06-18 11:49:17.221178 INFO::Fitting model to feature number 31, 11beta-hydroxyetiocholanolone glucuronide*
+2023-06-18 11:49:17.231388 WARNING::Fitting problem for feature 31 returning NA
+2023-06-18 11:49:17.232495 INFO::Fitting model to feature number 32, 11-ketoetiocholanolone glucuronide
+2023-06-18 11:49:17.242125 WARNING::Fitting problem for feature 32 returning NA
+2023-06-18 11:49:17.242891 INFO::Fitting model to feature number 33, 12,13-DiHOME
+2023-06-18 11:49:17.33194 INFO::Fitting model to feature number 34, 13-HODE + 9-HODE
+2023-06-18 11:49:17.735536 INFO::Fitting model to feature number 35, 15-HETE
+2023-06-18 11:49:17.889668 INFO::Fitting model to feature number 36, 16a-hydroxy DHEA 3-sulfate
+2023-06-18 11:49:17.959012 INFO::Fitting model to feature number 37, 16-hydroxypalmitate
+2023-06-18 11:49:18.127205 INFO::Fitting model to feature number 38, 17alpha-hydroxypregnanolone glucuronide
+2023-06-18 11:49:18.19338 INFO::Fitting model to feature number 39, 17alpha-hydroxypregnenolone 3-sulfate
+2023-06-18 11:49:18.201652 WARNING::Fitting problem for feature 39 returning NA
+2023-06-18 11:49:18.202411 INFO::Fitting model to feature number 40, 1-arachidonoyl-GPA (20:4)
+2023-06-18 11:49:18.23712 INFO::Fitting model to feature number 41, 1-arachidonoyl-GPC* (20:4)*
+2023-06-18 11:49:19.847787 INFO::Fitting model to feature number 42, 1-arachidonoyl-GPE (20:4n6)*
+2023-06-18 11:49:20.120571 INFO::Fitting model to feature number 43, 1-arachidonoyl-GPI* (20:4)*
+2023-06-18 11:49:20.445263 INFO::Fitting model to feature number 44, 1-arachidonylglycerol (20:4)
+2023-06-18 11:49:20.531513 INFO::Fitting model to feature number 45, 1-carboxyethylisoleucine
+2023-06-18 11:49:20.618239 INFO::Fitting model to feature number 46, 1-carboxyethylleucine
+2023-06-18 11:49:20.783835 INFO::Fitting model to feature number 47, 1-carboxyethylphenylalanine
+2023-06-18 11:49:20.871518 INFO::Fitting model to feature number 48, 1-carboxyethyltyrosine
+2023-06-18 11:49:20.88079 WARNING::Fitting problem for feature 48 returning NA
+2023-06-18 11:49:20.881809 INFO::Fitting model to feature number 49, 1-carboxyethylvaline
+2023-06-18 11:49:20.985519 INFO::Fitting model to feature number 50, 1-lignoceroyl-GPC (24:0)
+2023-06-18 11:49:20.993558 WARNING::Fitting problem for feature 50 returning NA
+2023-06-18 11:49:20.994751 INFO::Fitting model to feature number 51, 1-linolenoylglycerol (18:3)
+2023-06-18 11:49:21.033778 INFO::Fitting model to feature number 52, 1-linolenoyl-GPC (18:3)*
+2023-06-18 11:49:21.18688 INFO::Fitting model to feature number 53, 1-linoleoyl-2-arachidonoyl-GPC (18:2/20:4n6)*
+2023-06-18 11:49:21.48486 INFO::Fitting model to feature number 54, 1-linoleoyl-2-linolenoyl-GPC (18:2/18:3)*
+2023-06-18 11:49:21.557504 INFO::Fitting model to feature number 55, 1-linoleoylglycerol (18:2)
+2023-06-18 11:49:21.892211 INFO::Fitting model to feature number 56, 1-linoleoyl-GPA (18:2)*
+2023-06-18 11:49:21.927477 INFO::Fitting model to feature number 57, 1-linoleoyl-GPC (18:2)
+2023-06-18 11:49:23.195561 INFO::Fitting model to feature number 58, 1-linoleoyl-GPE (18:2)*
+2023-06-18 11:49:23.362584 INFO::Fitting model to feature number 59, 1-linoleoyl-GPG (18:2)*
+2023-06-18 11:49:23.408937 INFO::Fitting model to feature number 60, 1-linoleoyl-GPI* (18:2)*
+2023-06-18 11:49:23.608742 INFO::Fitting model to feature number 61, 1-methyl-4-imidazoleacetate
+2023-06-18 11:49:23.919487 INFO::Fitting model to feature number 62, 1-methyl-5-imidazoleacetate
+2023-06-18 11:49:24.016436 INFO::Fitting model to feature number 63, 1-methyl-5-imidazolelactate
+2023-06-18 11:49:24.065684 INFO::Fitting model to feature number 64, 1-methylguanidine
+2023-06-18 11:49:24.258486 INFO::Fitting model to feature number 65, 1-methylhistamine
+2023-06-18 11:49:24.297778 INFO::Fitting model to feature number 66, 1-methylhistidine
+2023-06-18 11:49:25.639146 INFO::Fitting model to feature number 67, 1-methylnicotinamide
+2023-06-18 11:49:25.683354 INFO::Fitting model to feature number 68, 1-methylxanthine
+2023-06-18 11:49:25.693126 WARNING::Fitting problem for feature 68 returning NA
+2023-06-18 11:49:25.694207 INFO::Fitting model to feature number 69, 1-myristoyl-2-arachidonoyl-GPC (14:0/20:4)*
+2023-06-18 11:49:25.812998 INFO::Fitting model to feature number 70, 1-myristoyl-2-palmitoyl-GPC (14:0/16:0)
+2023-06-18 11:49:25.904842 INFO::Fitting model to feature number 71, 1-myristoylglycerol (14:0)
+2023-06-18 11:49:25.957227 INFO::Fitting model to feature number 72, 1-oleoyl-2-docosahexaenoyl-GPC (18:1/22:6)*
+2023-06-18 11:49:26.254472 INFO::Fitting model to feature number 73, 1-oleoyl-2-linoleoyl-GPC (18:1/18:2)*
+2023-06-18 11:49:27.792379 INFO::Fitting model to feature number 74, 1-oleoyl-2-linoleoyl-GPE (18:1/18:2)*
+2023-06-18 11:49:27.800586 WARNING::Fitting problem for feature 74 returning NA
+2023-06-18 11:49:27.801316 INFO::Fitting model to feature number 75, 1-oleoylglycerol (18:1)
+2023-06-18 11:49:28.031994 INFO::Fitting model to feature number 76, 1-oleoylglycerophosphate (18:1)
+2023-06-18 11:49:28.040307 WARNING::Fitting problem for feature 76 returning NA
+2023-06-18 11:49:28.040996 INFO::Fitting model to feature number 77, 1-oleoyl-GPC (18:1)
+2023-06-18 11:49:30.571164 INFO::Fitting model to feature number 78, 1-oleoyl-GPE (18:1)
+2023-06-18 11:49:30.676877 INFO::Fitting model to feature number 79, 1-oleoyl-GPG (18:1)*
+2023-06-18 11:49:30.685562 WARNING::Fitting problem for feature 79 returning NA
+2023-06-18 11:49:30.686327 INFO::Fitting model to feature number 80, 1-oleoyl-GPI (18:1)
+2023-06-18 11:49:30.917199 INFO::Fitting model to feature number 81, 1-palmitoleoyl-2-linoleoyl-GPC (16:1/18:2)*
+2023-06-18 11:49:31.182432 INFO::Fitting model to feature number 82, 1-palmitoleoylglycerol (16:1)*
+2023-06-18 11:49:31.268139 INFO::Fitting model to feature number 83, 1-palmitoleoyl-GPC* (16:1)*
+2023-06-18 11:49:31.525025 INFO::Fitting model to feature number 84, 1-palmitoyl-2-arachidonoyl-GPC (16:0/20:4n6)
+2023-06-18 11:49:34.331527 INFO::Fitting model to feature number 85, 1-palmitoyl-2-arachidonoyl-GPE (16:0/20:4)*
+2023-06-18 11:49:34.37899 INFO::Fitting model to feature number 86, 1-palmitoyl-2-dihomo-linolenoyl-GPC (16:0/20:3n3 or 6)*
+2023-06-18 11:49:35.710576 INFO::Fitting model to feature number 87, 1-palmitoyl-2-docosahexaenoyl-GPC (16:0/22:6)
+2023-06-18 11:49:37.040426 INFO::Fitting model to feature number 88, 1-palmitoyl-2-docosahexaenoyl-GPE (16:0/22:6)*
+2023-06-18 11:49:37.270203 INFO::Fitting model to feature number 89, 1-palmitoyl-2-linoleoyl-GPC (16:0/18:2)
+2023-06-18 11:49:43.562208 INFO::Fitting model to feature number 90, 1-palmitoyl-2-linoleoyl-GPE (16:0/18:2)
+2023-06-18 11:49:43.793858 INFO::Fitting model to feature number 91, 1-palmitoyl-2-linoleoyl-GPI (16:0/18:2)
+2023-06-18 11:49:43.920169 INFO::Fitting model to feature number 92, 1-palmitoyl-2-oleoyl-GPC (16:0/18:1)
+2023-06-18 11:49:47.665371 INFO::Fitting model to feature number 93, 1-palmitoyl-2-oleoyl-GPI (16:0/18:1)*
+2023-06-18 11:49:47.673851 WARNING::Fitting problem for feature 93 returning NA
+2023-06-18 11:49:47.674668 INFO::Fitting model to feature number 94, 1-palmitoyl-2-palmitoleoyl-GPC (16:0/16:1)*
+2023-06-18 11:49:48.198204 INFO::Fitting model to feature number 95, 1-palmitoyl-2-stearoyl-GPC (16:0/18:0)
+2023-06-18 11:49:48.630451 INFO::Fitting model to feature number 96, 1-palmitoylglycerol (16:0)
+2023-06-18 11:49:49.13885 INFO::Fitting model to feature number 97, 1-palmitoyl-GPA (16:0)
+2023-06-18 11:49:49.149037 WARNING::Fitting problem for feature 97 returning NA
+2023-06-18 11:49:49.1499 INFO::Fitting model to feature number 98, 1-palmitoyl-GPC (16:0)
+2023-06-18 11:49:52.977536 INFO::Fitting model to feature number 99, 1-palmitoyl-GPE (16:0)
+2023-06-18 11:49:53.259736 INFO::Fitting model to feature number 100, 1-palmitoyl-GPG (16:0)*
+2023-06-18 11:49:53.269834 WARNING::Fitting problem for feature 100 returning NA
+2023-06-18 11:49:53.271477 INFO::Fitting model to feature number 101, 1-palmitoyl-GPI* (16:0)
+2023-06-18 11:49:53.439933 INFO::Fitting model to feature number 102, 1-ribosyl-imidazoleacetate*
+2023-06-18 11:49:53.525402 INFO::Fitting model to feature number 103, 1-stearoyl-2-arachidonoyl-GPC (18:0/20:4)
+2023-06-18 11:49:55.527296 INFO::Fitting model to feature number 104, 1-stearoyl-2-arachidonoyl-GPE (18:0/20:4)
+2023-06-18 11:49:55.762648 INFO::Fitting model to feature number 105, 1-stearoyl-2-arachidonoyl-GPI (18:0/20:4)
+2023-06-18 11:49:55.939709 INFO::Fitting model to feature number 106, 1-stearoyl-2-docosahexaenoyl-GPC (18:0/22:6)
+2023-06-18 11:49:56.77378 INFO::Fitting model to feature number 107, 1-stearoyl-2-docosahexaenoyl-GPE (18:0/22:6)*
+2023-06-18 11:49:56.782794 WARNING::Fitting problem for feature 107 returning NA
+2023-06-18 11:49:56.78388 INFO::Fitting model to feature number 108, 1-stearoyl-2-linoleoyl-GPC (18:0/18:2)*
+2023-06-18 11:50:01.421153 INFO::Fitting model to feature number 109, 1-stearoyl-2-linoleoyl-GPE (18:0/18:2)*
+2023-06-18 11:50:01.73305 INFO::Fitting model to feature number 110, 1-stearoyl-2-linoleoyl-GPI (18:0/18:2)
+2023-06-18 11:50:01.837969 INFO::Fitting model to feature number 111, 1-stearoyl-2-oleoyl-GPC (18:0/18:1)
+2023-06-18 11:50:03.514913 INFO::Fitting model to feature number 112, 1-stearoyl-2-oleoyl-GPE (18:0/18:1)
+2023-06-18 11:50:03.620151 INFO::Fitting model to feature number 113, 1-stearoyl-GPA (18:0)
+2023-06-18 11:50:03.629684 WARNING::Fitting problem for feature 113 returning NA
+2023-06-18 11:50:03.630665 INFO::Fitting model to feature number 114, 1-stearoyl-GPC (18:0)
+2023-06-18 11:50:05.979813 INFO::Fitting model to feature number 115, 1-stearoyl-GPE (18:0)
+2023-06-18 11:50:06.127046 INFO::Fitting model to feature number 116, 1-stearoyl-GPG (18:0)
+2023-06-18 11:50:06.136284 WARNING::Fitting problem for feature 116 returning NA
+2023-06-18 11:50:06.137021 INFO::Fitting model to feature number 117, 1-stearoyl-GPI (18:0)
+2023-06-18 11:50:06.567718 INFO::Fitting model to feature number 118, 1-stearoyl-GPS (18:0)*
+2023-06-18 11:50:06.611802 INFO::Fitting model to feature number 119, 2,2-Methylenebis(6-tert-butyl-p-cresol)
+2023-06-18 11:50:06.626258 WARNING::Fitting problem for feature 119 returning NA
+2023-06-18 11:50:06.627001 INFO::Fitting model to feature number 120, 2,3-dihydroxy-2-methylbutyrate
+2023-06-18 11:50:06.747966 INFO::Fitting model to feature number 121, 2,3-dihydroxy-5-methylthio-4-pentenoate (DMTPA)*
+2023-06-18 11:50:06.873552 INFO::Fitting model to feature number 122, 2,3-dihydroxyisovalerate
+2023-06-18 11:50:07.012935 INFO::Fitting model to feature number 123, 2,4-di-tert-butylphenol
+2023-06-18 11:50:08.152901 INFO::Fitting model to feature number 124, 2,6-dihydroxybenzoic acid
+2023-06-18 11:50:08.258248 INFO::Fitting model to feature number 125, 21-hydroxypregnenolone disulfate
+2023-06-18 11:50:08.40886 INFO::Fitting model to feature number 126, 21-hydroxypregnenolone monosulfate (1)
+2023-06-18 11:50:08.417715 WARNING::Fitting problem for feature 126 returning NA
+2023-06-18 11:50:08.418524 INFO::Fitting model to feature number 127, 21-hydroxypregnenolone monosulfate (2)
+2023-06-18 11:50:08.426521 WARNING::Fitting problem for feature 127 returning NA
+2023-06-18 11:50:08.427151 INFO::Fitting model to feature number 128, 2-acrylamidoglycolic acid
+2023-06-18 11:50:08.490163 INFO::Fitting model to feature number 129, 2-aminoadipate
+2023-06-18 11:50:08.499834 WARNING::Fitting problem for feature 129 returning NA
+2023-06-18 11:50:08.500604 INFO::Fitting model to feature number 130, 2-aminobutyrate
+2023-06-18 11:50:09.491019 INFO::Fitting model to feature number 131, 2-aminoheptanoate
+2023-06-18 11:50:09.501164 WARNING::Fitting problem for feature 131 returning NA
+2023-06-18 11:50:09.501981 INFO::Fitting model to feature number 132, 2-aminooctanoate
+2023-06-18 11:50:09.546454 INFO::Fitting model to feature number 133, 2-aminophenol sulfate
+2023-06-18 11:50:09.649163 INFO::Fitting model to feature number 134, 2-deoxyinosine
+2023-06-18 11:50:09.658732 WARNING::Fitting problem for feature 134 returning NA
+2023-06-18 11:50:09.659595 INFO::Fitting model to feature number 135, 2-deoxyuridine
+2023-06-18 11:50:09.771515 INFO::Fitting model to feature number 136, 2-ethylphenylsulfate
+2023-06-18 11:50:09.784227 WARNING::Fitting problem for feature 136 returning NA
+2023-06-18 11:50:09.78512 INFO::Fitting model to feature number 137, 2-hydroxy-3-methylvalerate
+2023-06-18 11:50:09.905186 INFO::Fitting model to feature number 138, 2-hydroxy-4-(methylthio)butanoic acid
+2023-06-18 11:50:09.914946 WARNING::Fitting problem for feature 138 returning NA
+2023-06-18 11:50:09.91574 INFO::Fitting model to feature number 139, 2-hydroxyacetaminophen sulfate*
+2023-06-18 11:50:09.926498 WARNING::Fitting problem for feature 139 returning NA
+2023-06-18 11:50:09.927283 INFO::Fitting model to feature number 140, 2-hydroxyadipate
+2023-06-18 11:50:10.001479 INFO::Fitting model to feature number 141, 2-hydroxyarachidate*
+2023-06-18 11:50:10.067769 INFO::Fitting model to feature number 142, 2-hydroxybutyrate/2-hydroxyisobutyrate
+2023-06-18 11:50:10.783081 INFO::Fitting model to feature number 143, 2-hydroxydecanoate
+2023-06-18 11:50:10.887513 INFO::Fitting model to feature number 144, 2-hydroxyglutarate
+2023-06-18 11:50:11.009589 INFO::Fitting model to feature number 145, 2-hydroxyheptanoate*
+2023-06-18 11:50:11.108642 INFO::Fitting model to feature number 146, 2-hydroxyhippurate (salicylurate)
+2023-06-18 11:50:11.14796 INFO::Fitting model to feature number 147, 2-hydroxyoctanoate
+2023-06-18 11:50:11.204938 INFO::Fitting model to feature number 148, 2-hydroxypalmitate
+2023-06-18 11:50:11.695454 INFO::Fitting model to feature number 149, 2-hydroxyphenylacetate
+2023-06-18 11:50:11.705501 WARNING::Fitting problem for feature 149 returning NA
+2023-06-18 11:50:11.706295 INFO::Fitting model to feature number 150, 2-hydroxysebacate
+2023-06-18 11:50:11.835407 INFO::Fitting model to feature number 151, 2-hydroxystearate
+2023-06-18 11:50:12.095249 INFO::Fitting model to feature number 152, 2-isopropylmalate
+2023-06-18 11:50:12.161038 INFO::Fitting model to feature number 153, 2-linoleoylglycerol (18:2)
+2023-06-18 11:50:12.255853 INFO::Fitting model to feature number 154, 2-methoxyacetaminophen sulfate*
+2023-06-18 11:50:12.268055 WARNING::Fitting problem for feature 154 returning NA
+2023-06-18 11:50:12.268998 INFO::Fitting model to feature number 155, 2-methoxyhydroquinone sulfate (1)
+2023-06-18 11:50:12.313505 INFO::Fitting model to feature number 156, 2-methylbutyrylcarnitine (C5)
+2023-06-18 11:50:12.469004 INFO::Fitting model to feature number 157, 2-methylbutyrylglycine (C5)
+2023-06-18 11:50:12.555029 INFO::Fitting model to feature number 158, 2-methylcitrate/homocitrate
+2023-06-18 11:50:12.623846 INFO::Fitting model to feature number 159, 2-naphthol sulfate
+2023-06-18 11:50:12.664076 INFO::Fitting model to feature number 160, 2-oleoylglycerol (18:1)
+2023-06-18 11:50:12.850404 INFO::Fitting model to feature number 161, 2-O-methylascorbic acid
+2023-06-18 11:50:13.069303 INFO::Fitting model to feature number 162, 2-O-methylcytidine
+2023-06-18 11:50:13.205676 INFO::Fitting model to feature number 163, 2-O-methyluridine
+2023-06-18 11:50:13.2144 WARNING::Fitting problem for feature 163 returning NA
+2023-06-18 11:50:13.21523 INFO::Fitting model to feature number 164, 2-oxindole-3-acetate
+2023-06-18 11:50:13.22355 WARNING::Fitting problem for feature 164 returning NA
+2023-06-18 11:50:13.224223 INFO::Fitting model to feature number 165, 2-oxoarginine*
+2023-06-18 11:50:13.303229 INFO::Fitting model to feature number 166, 2-palmitoleoyl-GPC* (16:1)*
+2023-06-18 11:50:13.312137 WARNING::Fitting problem for feature 166 returning NA
+2023-06-18 11:50:13.312883 INFO::Fitting model to feature number 167, 2-palmitoylglycerol (16:0)
+2023-06-18 11:50:13.320383 WARNING::Fitting problem for feature 167 returning NA
+2023-06-18 11:50:13.321042 INFO::Fitting model to feature number 168, 2-palmitoyl-GPC* (16:0)*
+2023-06-18 11:50:13.833584 INFO::Fitting model to feature number 169, 2-piperidinone
+2023-06-18 11:50:13.983462 INFO::Fitting model to feature number 170, 2-pyrrolidinone
+2023-06-18 11:50:14.322098 INFO::Fitting model to feature number 171, 2R,3R-dihydroxybutyrate
+2023-06-18 11:50:15.106385 INFO::Fitting model to feature number 172, 2S,3R-dihydroxybutyrate
+2023-06-18 11:50:16.004906 INFO::Fitting model to feature number 173, 2-stearoyl-GPE (18:0)*
+2023-06-18 11:50:16.075655 INFO::Fitting model to feature number 174, 3-(3-amino-3-carboxypropyl)uridine*
+2023-06-18 11:50:16.090098 WARNING::Fitting problem for feature 174 returning NA
+2023-06-18 11:50:16.090968 INFO::Fitting model to feature number 175, 3-(3-hydroxyphenyl)propionate
+2023-06-18 11:50:16.101854 WARNING::Fitting problem for feature 175 returning NA
+2023-06-18 11:50:16.102694 INFO::Fitting model to feature number 176, 3-(4-hydroxyphenyl)lactate (HPLA)
+2023-06-18 11:50:16.998651 INFO::Fitting model to feature number 177, 3-(4-hydroxyphenyl)propionate
+2023-06-18 11:50:17.034407 INFO::Fitting model to feature number 178, 3-(methylthio)acetaminophen sulfate*
+2023-06-18 11:50:17.159113 INFO::Fitting model to feature number 179, 3,4-dihydroxybutyrate
+2023-06-18 11:50:17.393224 INFO::Fitting model to feature number 180, 3,5-dichloro-2,6-dihydroxybenzoic acid
+2023-06-18 11:50:17.43269 INFO::Fitting model to feature number 181, 3-amino-2-piperidone
+2023-06-18 11:50:17.705076 INFO::Fitting model to feature number 182, 3-aminoisobutyrate
+2023-06-18 11:50:18.034805 INFO::Fitting model to feature number 183, 3beta,7alpha-dihydroxy-5-cholestenoate
+2023-06-18 11:50:18.143778 INFO::Fitting model to feature number 184, 3beta-hydroxy-5-cholestenoate
+2023-06-18 11:50:18.152783 WARNING::Fitting problem for feature 184 returning NA
+2023-06-18 11:50:18.153625 INFO::Fitting model to feature number 185, 3b-hydroxy-5-cholenoic acid
+2023-06-18 11:50:18.161728 WARNING::Fitting problem for feature 185 returning NA
+2023-06-18 11:50:18.162408 INFO::Fitting model to feature number 186, 3-bromo-5-chloro-2,6-dihydroxybenzoic acid*
+2023-06-18 11:50:18.209029 INFO::Fitting model to feature number 187, 3-carboxy-4-methyl-5-pentyl-2-furanpropionate (3-CMPFP)
+2023-06-18 11:50:18.271467 INFO::Fitting model to feature number 188, 3-carboxy-4-methyl-5-propyl-2-furanpropanoate (CMPF)
+2023-06-18 11:50:18.363914 INFO::Fitting model to feature number 189, 3-ethylphenylsulfate
+2023-06-18 11:50:18.375413 WARNING::Fitting problem for feature 189 returning NA
+2023-06-18 11:50:18.376181 INFO::Fitting model to feature number 190, 3-formylindole
+2023-06-18 11:50:18.665538 INFO::Fitting model to feature number 191, 3-hydroxy-2-ethylpropionate
+2023-06-18 11:50:18.797602 INFO::Fitting model to feature number 192, 3-hydroxy-2-methylpyridine sulfate
+2023-06-18 11:50:18.923189 INFO::Fitting model to feature number 193, 3-hydroxy-3-methylglutarate
+2023-06-18 11:50:19.073697 INFO::Fitting model to feature number 194, 3-hydroxyadipate
+2023-06-18 11:50:19.200509 INFO::Fitting model to feature number 195, 3-hydroxybutyrate (BHBA)
+2023-06-18 11:50:19.378119 INFO::Fitting model to feature number 196, 3-hydroxybutyroylglycine
+2023-06-18 11:50:19.500067 INFO::Fitting model to feature number 197, 3-hydroxydecanoate
+2023-06-18 11:50:19.594994 INFO::Fitting model to feature number 198, 3-hydroxydodecanedioate*
+2023-06-18 11:50:19.634564 INFO::Fitting model to feature number 199, 3-hydroxyhexanoate
+2023-06-18 11:50:19.69331 INFO::Fitting model to feature number 200, 3-hydroxyhippurate
+2023-06-18 11:50:19.72894 INFO::Fitting model to feature number 201, 3-hydroxyisobutyrate
+2023-06-18 11:50:19.75839 INFO::Fitting model to feature number 202, 3-hydroxylaurate
+2023-06-18 11:50:19.959118 INFO::Fitting model to feature number 203, 3-hydroxymyristate
+2023-06-18 11:50:20.066005 INFO::Fitting model to feature number 204, 3-hydroxyoctanoate
+2023-06-18 11:50:20.168112 INFO::Fitting model to feature number 205, 3-hydroxyoleate*
+2023-06-18 11:50:20.20471 INFO::Fitting model to feature number 206, 3-hydroxypyridine sulfate
+2023-06-18 11:50:20.248416 INFO::Fitting model to feature number 207, 3-hydroxysebacate
+2023-06-18 11:50:20.295019 INFO::Fitting model to feature number 208, 3-hydroxystachydrine*
+2023-06-18 11:50:20.407085 INFO::Fitting model to feature number 209, 3-hydroxystearate
+2023-06-18 11:50:20.52684 INFO::Fitting model to feature number 210, 3-indoleglyoxylic acid
+2023-06-18 11:50:20.577621 INFO::Fitting model to feature number 211, 3-indoxyl sulfate
+2023-06-18 11:50:20.940405 INFO::Fitting model to feature number 212, 3-methoxycatechol sulfate (1)
+2023-06-18 11:50:20.995708 INFO::Fitting model to feature number 213, 3-methoxytyrosine
+2023-06-18 11:50:21.149234 INFO::Fitting model to feature number 214, 3-methyl catechol sulfate (1)
+2023-06-18 11:50:21.202391 INFO::Fitting model to feature number 215, 3-methyl-2-oxobutyrate
+2023-06-18 11:50:21.341838 INFO::Fitting model to feature number 216, 3-methyl-2-oxovalerate
+2023-06-18 11:50:21.727712 INFO::Fitting model to feature number 217, 3-methyladipate
+2023-06-18 11:50:21.771169 INFO::Fitting model to feature number 218, 3-methylcytidine
+2023-06-18 11:50:21.778705 WARNING::Fitting problem for feature 218 returning NA
+2023-06-18 11:50:21.779427 INFO::Fitting model to feature number 219, 3-methylglutaconate
+2023-06-18 11:50:21.987756 INFO::Fitting model to feature number 220, 3-methylglutarate/2-methylglutarate
+2023-06-18 11:50:21.999088 WARNING::Fitting problem for feature 220 returning NA
+2023-06-18 11:50:22.000509 INFO::Fitting model to feature number 221, 3-methylglutarylcarnitine (2)
+2023-06-18 11:50:22.071107 INFO::Fitting model to feature number 222, 3-methylhistidine
+2023-06-18 11:50:22.106888 INFO::Fitting model to feature number 223, 3-methylxanthine
+2023-06-18 11:50:22.156664 INFO::Fitting model to feature number 224, 3-phenylpropionate (hydrocinnamate)
+2023-06-18 11:50:22.264316 INFO::Fitting model to feature number 225, 3-sulfo-L-alanine
+2023-06-18 11:50:22.327126 INFO::Fitting model to feature number 226, 3-ureidopropionate
+2023-06-18 11:50:22.420134 INFO::Fitting model to feature number 227, 4-acetamidobutanoate
+2023-06-18 11:50:22.428373 WARNING::Fitting problem for feature 227 returning NA
+2023-06-18 11:50:22.429072 INFO::Fitting model to feature number 228, 4-acetamidophenol
+2023-06-18 11:50:22.440087 WARNING::Fitting problem for feature 228 returning NA
+2023-06-18 11:50:22.440791 INFO::Fitting model to feature number 229, 4-acetamidophenylglucuronide
+2023-06-18 11:50:22.452198 WARNING::Fitting problem for feature 229 returning NA
+2023-06-18 11:50:22.452924 INFO::Fitting model to feature number 230, 4-acetaminophen sulfate
+2023-06-18 11:50:22.462782 WARNING::Fitting problem for feature 230 returning NA
+2023-06-18 11:50:22.463892 INFO::Fitting model to feature number 231, 4-acetylphenyl sulfate
+2023-06-18 11:50:22.496667 INFO::Fitting model to feature number 232, 4-allylcatechol sulfate
+2023-06-18 11:50:22.533846 INFO::Fitting model to feature number 233, 4-allylphenol sulfate
+2023-06-18 11:50:22.607377 INFO::Fitting model to feature number 234, 4-chlorobenzoic acid
+2023-06-18 11:50:22.750499 INFO::Fitting model to feature number 235, 4-ethylcatechol sulfate
+2023-06-18 11:50:22.787676 INFO::Fitting model to feature number 236, 4-ethylphenyl sulfate
+2023-06-18 11:50:22.954571 INFO::Fitting model to feature number 237, 4-guanidinobutanoate
+2023-06-18 11:50:23.370059 INFO::Fitting model to feature number 238, 4-hydroxychlorothalonil
+2023-06-18 11:50:23.46883 INFO::Fitting model to feature number 239, 4-hydroxyglutamate
+2023-06-18 11:50:23.478436 WARNING::Fitting problem for feature 239 returning NA
+2023-06-18 11:50:23.47925 INFO::Fitting model to feature number 240, 4-hydroxyhippurate
+2023-06-18 11:50:23.528171 INFO::Fitting model to feature number 241, 4-hydroxyphenylacetate
+2023-06-18 11:50:23.618808 INFO::Fitting model to feature number 242, 4-hydroxyphenylacetoylcarnitine
+2023-06-18 11:50:23.6299 WARNING::Fitting problem for feature 242 returning NA
+2023-06-18 11:50:23.630796 INFO::Fitting model to feature number 243, 4-hydroxyphenylacetylglutamine
+2023-06-18 11:50:23.75588 INFO::Fitting model to feature number 244, 4-hydroxyphenylpyruvate
+2023-06-18 11:50:23.765396 WARNING::Fitting problem for feature 244 returning NA
+2023-06-18 11:50:23.76638 INFO::Fitting model to feature number 245, 4-imidazoleacetate
+2023-06-18 11:50:23.878586 INFO::Fitting model to feature number 246, 4-methoxyphenol sulfate
+2023-06-18 11:50:23.960114 INFO::Fitting model to feature number 247, 4-methyl-2-oxopentanoate
+2023-06-18 11:50:24.504959 INFO::Fitting model to feature number 248, 4-methylcatechol sulfate
+2023-06-18 11:50:24.605874 INFO::Fitting model to feature number 249, 4-methylguaiacol sulfate
+2023-06-18 11:50:24.723314 INFO::Fitting model to feature number 250, 4-vinylcatechol sulfate
+2023-06-18 11:50:24.841396 INFO::Fitting model to feature number 251, 4-vinylguaiacol sulfate
+2023-06-18 11:50:24.850231 WARNING::Fitting problem for feature 251 returning NA
+2023-06-18 11:50:24.851054 INFO::Fitting model to feature number 252, 4-vinylphenol sulfate
+2023-06-18 11:50:24.919143 INFO::Fitting model to feature number 253, 5-(galactosylhydroxy)-L-lysine
+2023-06-18 11:50:25.028548 INFO::Fitting model to feature number 254, 5,6-dihydrothymine
+2023-06-18 11:50:25.144572 INFO::Fitting model to feature number 255, 5,6-dihydrouracil
+2023-06-18 11:50:25.153352 WARNING::Fitting problem for feature 255 returning NA
+2023-06-18 11:50:25.154126 INFO::Fitting model to feature number 256, 5,6-dihydrouridine
+2023-06-18 11:50:25.35047 INFO::Fitting model to feature number 257, 5-acetylamino-6-amino-3-methyluracil
+2023-06-18 11:50:25.428296 INFO::Fitting model to feature number 258, 5alpha-androstan-3alpha,17alpha-diol disulfate
+2023-06-18 11:50:25.43665 WARNING::Fitting problem for feature 258 returning NA
+2023-06-18 11:50:25.437434 INFO::Fitting model to feature number 259, 5alpha-androstan-3alpha,17alpha-diol monosulfate
+2023-06-18 11:50:25.445063 WARNING::Fitting problem for feature 259 returning NA
+2023-06-18 11:50:25.4457 INFO::Fitting model to feature number 260, 5alpha-androstan-3alpha,17beta-diol 17-glucuronide
+2023-06-18 11:50:25.45617 WARNING::Fitting problem for feature 260 returning NA
+2023-06-18 11:50:25.457415 INFO::Fitting model to feature number 261, 5alpha-androstan-3alpha,17beta-diol disulfate
+2023-06-18 11:50:25.504424 INFO::Fitting model to feature number 262, 5alpha-androstan-3alpha,17beta-diol monosulfate (1)
+2023-06-18 11:50:25.589276 INFO::Fitting model to feature number 263, 5alpha-androstan-3alpha,17beta-diol monosulfate (2)
+2023-06-18 11:50:25.597045 WARNING::Fitting problem for feature 263 returning NA
+2023-06-18 11:50:25.597738 INFO::Fitting model to feature number 264, 5alpha-androstan-3beta,17alpha-diol disulfate
+2023-06-18 11:50:25.660583 INFO::Fitting model to feature number 265, 5alpha-androstan-3beta,17beta-diol disulfate
+2023-06-18 11:50:25.904297 INFO::Fitting model to feature number 266, 5alpha-androstan-3beta,17beta-diol monosulfate (2)
+2023-06-18 11:50:25.956044 INFO::Fitting model to feature number 267, 5alpha-pregnan-3beta,20alpha-diol disulfate
+2023-06-18 11:50:26.061963 INFO::Fitting model to feature number 268, 5alpha-pregnan-3beta,20alpha-diol monosulfate (2)
+2023-06-18 11:50:26.130122 INFO::Fitting model to feature number 269, 5alpha-pregnan-3beta,20beta-diol monosulfate (1)
+2023-06-18 11:50:26.200933 INFO::Fitting model to feature number 270, 5alpha-pregnan-diol disulfate
+2023-06-18 11:50:26.268384 INFO::Fitting model to feature number 271, 5-dodecenoate (12:1n7)
+2023-06-18 11:50:26.486728 INFO::Fitting model to feature number 272, 5-dodecenoylcarnitine (C12:1)
+2023-06-18 11:50:26.539469 INFO::Fitting model to feature number 273, 5-HEPE
+2023-06-18 11:50:26.547701 WARNING::Fitting problem for feature 273 returning NA
+2023-06-18 11:50:26.548508 INFO::Fitting model to feature number 274, 5-HETE
+2023-06-18 11:50:26.555182 WARNING::Fitting problem for feature 274 returning NA
+2023-06-18 11:50:26.55584 INFO::Fitting model to feature number 275, 5-hydroxy-2-methylpyridine sulfate
+2023-06-18 11:50:26.606257 INFO::Fitting model to feature number 276, 5-hydroxyhexanoate
+2023-06-18 11:50:26.696632 INFO::Fitting model to feature number 277, 5-hydroxyindoleacetate
+2023-06-18 11:50:26.782999 WARNING::Fitting problem for feature 277 returning NA
+2023-06-18 11:50:26.784261 INFO::Fitting model to feature number 278, 5-hydroxylysine
+2023-06-18 11:50:26.920194 INFO::Fitting model to feature number 279, 5-methylthioadenosine (MTA)
+2023-06-18 11:50:27.044384 INFO::Fitting model to feature number 280, 5-methylthioribose
+2023-06-18 11:50:27.082267 INFO::Fitting model to feature number 281, 5-methyluridine (ribothymidine)
+2023-06-18 11:50:27.214273 INFO::Fitting model to feature number 282, 5-oxoproline
+2023-06-18 11:50:31.43781 INFO::Fitting model to feature number 283, 6-bromotryptophan
+2023-06-18 11:50:31.446602 WARNING::Fitting problem for feature 283 returning NA
+2023-06-18 11:50:31.447372 INFO::Fitting model to feature number 284, 6-hydroxyindole sulfate
+2023-06-18 11:50:31.490245 INFO::Fitting model to feature number 285, 6-oxopiperidine-2-carboxylate
+2023-06-18 11:50:31.560532 INFO::Fitting model to feature number 286, 7-HOCA
+2023-06-18 11:50:31.569264 WARNING::Fitting problem for feature 286 returning NA
+2023-06-18 11:50:31.570067 INFO::Fitting model to feature number 287, 7-hydroxycholesterol (alpha or beta)
+2023-06-18 11:50:31.61939 INFO::Fitting model to feature number 288, 7-methylguanine
+2023-06-18 11:50:31.952551 INFO::Fitting model to feature number 289, 7-methylxanthine
+2023-06-18 11:50:32.16109 INFO::Fitting model to feature number 290, 8-hydroxyoctanoate
+2023-06-18 11:50:32.232837 INFO::Fitting model to feature number 291, 8-methoxykynurenate
+2023-06-18 11:50:32.27825 INFO::Fitting model to feature number 292, 9,10-DiHOME
+2023-06-18 11:50:32.351685 INFO::Fitting model to feature number 293, 9-hydroxystearate
+2023-06-18 11:50:32.391488 INFO::Fitting model to feature number 294, acesulfame
+2023-06-18 11:50:32.451639 INFO::Fitting model to feature number 295, acetylcarnitine (C2)
+2023-06-18 11:50:32.760054 INFO::Fitting model to feature number 296, acisoga
+2023-06-18 11:50:32.929902 INFO::Fitting model to feature number 297, aconitate [cis or trans]
+2023-06-18 11:50:33.035443 INFO::Fitting model to feature number 298, adenine
+2023-06-18 11:50:33.070895 INFO::Fitting model to feature number 299, adenosine
+2023-06-18 11:50:33.168707 INFO::Fitting model to feature number 300, AMP
+2023-06-18 11:50:33.209251 INFO::Fitting model to feature number 301, adipate
+2023-06-18 11:50:33.307126 INFO::Fitting model to feature number 302, adipoylcarnitine (C6-DC)
+2023-06-18 11:50:33.380524 INFO::Fitting model to feature number 303, adrenate (22:4n6)
+2023-06-18 11:50:33.585953 INFO::Fitting model to feature number 304, alanine
+2023-06-18 11:50:39.138839 INFO::Fitting model to feature number 305, allantoin
+2023-06-18 11:50:39.959854 INFO::Fitting model to feature number 306, alliin
+2023-06-18 11:50:40.009021 INFO::Fitting model to feature number 307, alpha-hydroxycaproate
+2023-06-18 11:50:40.018263 WARNING::Fitting problem for feature 307 returning NA
+2023-06-18 11:50:40.019458 INFO::Fitting model to feature number 308, alpha-hydroxyisocaproate
+2023-06-18 11:50:40.159769 INFO::Fitting model to feature number 309, alpha-hydroxyisovalerate
+2023-06-18 11:50:40.750162 INFO::Fitting model to feature number 310, alpha-ketoglutaramate*
+2023-06-18 11:50:41.036113 INFO::Fitting model to feature number 311, alpha-ketoglutarate
+2023-06-18 11:50:41.191335 INFO::Fitting model to feature number 312, alpha-tocopherol
+2023-06-18 11:50:42.117495 INFO::Fitting model to feature number 313, andro steroid monosulfate C19H28O6S (1)*
+2023-06-18 11:50:42.169909 INFO::Fitting model to feature number 314, androstenediol (3alpha, 17alpha) monosulfate (2)
+2023-06-18 11:50:42.179236 WARNING::Fitting problem for feature 314 returning NA
+2023-06-18 11:50:42.180113 INFO::Fitting model to feature number 315, androstenediol (3alpha, 17alpha) monosulfate (3)
+2023-06-18 11:50:42.296472 INFO::Fitting model to feature number 316, androstenediol (3beta,17beta) disulfate (1)
+2023-06-18 11:50:42.672888 INFO::Fitting model to feature number 317, androstenediol (3beta,17beta) disulfate (2)
+2023-06-18 11:50:42.773785 INFO::Fitting model to feature number 318, androstenediol (3beta,17beta) monosulfate (1)
+2023-06-18 11:50:42.883638 INFO::Fitting model to feature number 319, androstenediol (3beta,17beta) monosulfate (2)
+2023-06-18 11:50:42.957833 INFO::Fitting model to feature number 320, androsterone glucuronide
+2023-06-18 11:50:43.003165 INFO::Fitting model to feature number 321, androsterone sulfate
+2023-06-18 11:50:43.178796 INFO::Fitting model to feature number 322, anthranilate
+2023-06-18 11:50:43.243988 INFO::Fitting model to feature number 323, arabinose
+2023-06-18 11:50:43.252695 WARNING::Fitting problem for feature 323 returning NA
+2023-06-18 11:50:43.253432 INFO::Fitting model to feature number 324, arabitol/xylitol
+2023-06-18 11:50:43.388598 INFO::Fitting model to feature number 325, arabonate/xylonate
+2023-06-18 11:50:44.190497 INFO::Fitting model to feature number 326, arachidate (20:0)
+2023-06-18 11:50:44.383993 INFO::Fitting model to feature number 327, arachidonate (20:4n6)
+2023-06-18 11:50:45.845926 INFO::Fitting model to feature number 328, arachidonoylcholine
+2023-06-18 11:50:45.855936 WARNING::Fitting problem for feature 328 returning NA
+2023-06-18 11:50:45.856852 INFO::Fitting model to feature number 329, argininate*
+2023-06-18 11:50:46.052981 INFO::Fitting model to feature number 330, arginine
+2023-06-18 11:50:49.881844 INFO::Fitting model to feature number 331, argininosuccinate
+2023-06-18 11:50:49.892155 WARNING::Fitting problem for feature 331 returning NA
+2023-06-18 11:50:49.893024 INFO::Fitting model to feature number 332, ascorbic acid 2-sulfate
+2023-06-18 11:50:50.004757 INFO::Fitting model to feature number 333, ascorbic acid 3-sulfate*
+2023-06-18 11:50:50.402193 INFO::Fitting model to feature number 334, asparagine
+2023-06-18 11:50:52.776882 INFO::Fitting model to feature number 335, aspartate
+2023-06-18 11:50:52.812037 INFO::Fitting model to feature number 336, azelate (C9-DC)
+2023-06-18 11:50:53.015863 INFO::Fitting model to feature number 337, behenoyl dihydrosphingomyelin (d18:0/22:0)*
+2023-06-18 11:50:53.063016 INFO::Fitting model to feature number 338, behenoyl sphingomyelin (d18:1/22:0)*
+2023-06-18 11:50:55.255514 INFO::Fitting model to feature number 339, benzoate
+2023-06-18 11:50:56.182155 INFO::Fitting model to feature number 340, beta-alanine
+2023-06-18 11:50:56.285781 INFO::Fitting model to feature number 341, beta-citrylglutamate
+2023-06-18 11:50:56.294943 WARNING::Fitting problem for feature 341 returning NA
+2023-06-18 11:50:56.295959 INFO::Fitting model to feature number 342, beta-cryptoxanthin
+2023-06-18 11:50:56.416333 INFO::Fitting model to feature number 343, beta-hydroxyisovalerate
+2023-06-18 11:50:56.625325 INFO::Fitting model to feature number 344, betaine
+2023-06-18 11:50:59.770096 INFO::Fitting model to feature number 345, betonicine
+2023-06-18 11:50:59.831266 INFO::Fitting model to feature number 346, bilirubin (E,E)*
+2023-06-18 11:50:59.874475 INFO::Fitting model to feature number 347, bilirubin
+2023-06-18 11:50:59.978799 INFO::Fitting model to feature number 348, bilirubin degradation product, C16H18N2O5 (1)
+2023-06-18 11:51:00.030496 INFO::Fitting model to feature number 349, bilirubin degradation product, C16H18N2O5 (2)
+2023-06-18 11:51:00.108713 INFO::Fitting model to feature number 350, bilirubin degradation product, C16H18N2O5 (3)
+2023-06-18 11:51:00.158981 INFO::Fitting model to feature number 351, bilirubin degradation product, C16H18N2O5 (4)
+2023-06-18 11:51:00.242474 INFO::Fitting model to feature number 352, bilirubin degradation product, C17H18N2O4 (1)
+2023-06-18 11:51:00.32218 WARNING::Fitting problem for feature 352 returning NA
+2023-06-18 11:51:00.323716 INFO::Fitting model to feature number 353, bilirubin degradation product, C17H18N2O4 (2)
+2023-06-18 11:51:00.38258 INFO::Fitting model to feature number 354, bilirubin degradation product, C17H18N2O4 (3)
+2023-06-18 11:51:00.447502 INFO::Fitting model to feature number 355, bilirubin degradation product, C17H20N2O5 (1)
+2023-06-18 11:51:00.561668 INFO::Fitting model to feature number 356, bilirubin degradation product, C17H20N2O5 (2)
+2023-06-18 11:51:00.655586 INFO::Fitting model to feature number 357, biliverdin
+2023-06-18 11:51:00.707812 INFO::Fitting model to feature number 358, branched chain 14:0 dicarboxylic acid
+2023-06-18 11:51:00.746069 INFO::Fitting model to feature number 359, branched-chain, straight-chain, or cyclopropyl 10:1 fatty acid (1)*
+2023-06-18 11:51:00.83074 INFO::Fitting model to feature number 360, branched-chain, straight-chain, or cyclopropyl 10:1 fatty acid (3)*
+2023-06-18 11:51:00.839547 WARNING::Fitting problem for feature 360 returning NA
+2023-06-18 11:51:00.840811 INFO::Fitting model to feature number 361, branched-chain, straight-chain, or cyclopropyl 12:1 fatty acid*
+2023-06-18 11:51:00.967659 INFO::Fitting model to feature number 362, butyrate/isobutyrate (4:0)
+2023-06-18 11:51:01.121743 INFO::Fitting model to feature number 363, butyrylcarnitine (C4)
+2023-06-18 11:51:01.250071 INFO::Fitting model to feature number 364, butyrylglycine (C4)
+2023-06-18 11:51:01.32295 INFO::Fitting model to feature number 365, caffeic acid sulfate
+2023-06-18 11:51:01.365462 WARNING::Fitting problem for feature 365 returning NA
+2023-06-18 11:51:01.366227 INFO::Fitting model to feature number 366, caffeine
+2023-06-18 11:51:01.410776 INFO::Fitting model to feature number 367, caprate (10:0)
+2023-06-18 11:51:02.588695 INFO::Fitting model to feature number 368, caproate (6:0)
+2023-06-18 11:51:03.40477 INFO::Fitting model to feature number 369, caprylate (8:0)
+2023-06-18 11:51:04.459005 INFO::Fitting model to feature number 370, carboxyethyl-GABA
+2023-06-18 11:51:04.568481 INFO::Fitting model to feature number 371, carnitine
+2023-06-18 11:51:11.002673 INFO::Fitting model to feature number 372, carotene diol (1)
+2023-06-18 11:51:11.194543 INFO::Fitting model to feature number 373, carotene diol (2)
+2023-06-18 11:51:11.290023 WARNING::Fitting problem for feature 373 returning NA
+2023-06-18 11:51:11.291587 INFO::Fitting model to feature number 374, carotene diol (3)
+2023-06-18 11:51:11.301064 WARNING::Fitting problem for feature 374 returning NA
+2023-06-18 11:51:11.30181 INFO::Fitting model to feature number 375, catechol sulfate
+2023-06-18 11:51:11.425988 INFO::Fitting model to feature number 376, ceramide (d18:1/20:0, d16:1/22:0, d20:1/18:0)*
+2023-06-18 11:51:11.43519 WARNING::Fitting problem for feature 376 returning NA
+2023-06-18 11:51:11.435958 INFO::Fitting model to feature number 377, ceramide (d18:2/24:1, d18:1/24:2)*
+2023-06-18 11:51:11.487088 INFO::Fitting model to feature number 378, cerotoylcarnitine (C26)*
+2023-06-18 11:51:11.497117 WARNING::Fitting problem for feature 378 returning NA
+2023-06-18 11:51:11.497892 INFO::Fitting model to feature number 379, C-glycosyltryptophan
+2023-06-18 11:51:11.610399 INFO::Fitting model to feature number 380, chenodeoxycholate
+2023-06-18 11:51:11.828428 INFO::Fitting model to feature number 381, chenodeoxycholic acid sulfate (1)
+2023-06-18 11:51:11.837633 WARNING::Fitting problem for feature 381 returning NA
+2023-06-18 11:51:11.8383 INFO::Fitting model to feature number 382, chiro-inositol
+2023-06-18 11:51:11.872283 INFO::Fitting model to feature number 383, cholate
+2023-06-18 11:51:11.986175 INFO::Fitting model to feature number 384, cholesterol
+2023-06-18 11:51:15.63482 INFO::Fitting model to feature number 385, cholesterol sulfate
+2023-06-18 11:51:15.961602 INFO::Fitting model to feature number 386, choline
+2023-06-18 11:51:19.780495 INFO::Fitting model to feature number 387, phosphocholine
+2023-06-18 11:51:20.656587 INFO::Fitting model to feature number 388, cinnamoylglycine
+2023-06-18 11:51:20.69118 INFO::Fitting model to feature number 389, cis-3,4-methyleneheptanoate
+2023-06-18 11:51:20.779777 INFO::Fitting model to feature number 390, cis-3,4-methyleneheptanoylcarnitine
+2023-06-18 11:51:20.886964 INFO::Fitting model to feature number 391, cis-3,4-methyleneheptanoylglycine
+2023-06-18 11:51:20.919978 INFO::Fitting model to feature number 392, cis-4-decenoate (10:1n6)*
+2023-06-18 11:51:21.244937 INFO::Fitting model to feature number 393, cis-4-decenoylcarnitine (C10:1)
+2023-06-18 11:51:21.379023 INFO::Fitting model to feature number 394, cis-urocanate
+2023-06-18 11:51:21.470499 INFO::Fitting model to feature number 395, citrate
+2023-06-18 11:51:21.661088 INFO::Fitting model to feature number 396, citrulline
+2023-06-18 11:51:23.025131 INFO::Fitting model to feature number 397, cortolone glucuronide (1)
+2023-06-18 11:51:23.08614 INFO::Fitting model to feature number 398, cotinine
+2023-06-18 11:51:23.212576 INFO::Fitting model to feature number 399, creatine
+2023-06-18 11:51:23.28682 INFO::Fitting model to feature number 400, creatinine
+2023-06-18 11:51:29.590755 INFO::Fitting model to feature number 401, cys-gly, oxidized
+2023-06-18 11:51:29.635663 INFO::Fitting model to feature number 402, cystathionine
+2023-06-18 11:51:29.738994 INFO::Fitting model to feature number 403, cysteine
+2023-06-18 11:51:29.850274 INFO::Fitting model to feature number 404, cysteine s-sulfate
+2023-06-18 11:51:29.896429 INFO::Fitting model to feature number 405, cysteine sulfinic acid
+2023-06-18 11:51:30.241852 INFO::Fitting model to feature number 406, cysteine-glutathione disulfide
+2023-06-18 11:51:30.314107 INFO::Fitting model to feature number 407, cysteinylglycine disulfide*
+2023-06-18 11:51:30.47331 INFO::Fitting model to feature number 408, cystine
+2023-06-18 11:51:30.518348 INFO::Fitting model to feature number 409, cytidine
+2023-06-18 11:51:30.650944 INFO::Fitting model to feature number 410, cytosine
+2023-06-18 11:51:30.774532 INFO::Fitting model to feature number 411, daidzein sulfate (2)
+2023-06-18 11:51:30.822354 INFO::Fitting model to feature number 412, decadienedioic acid (C10:2-DC)
+2023-06-18 11:51:30.871116 INFO::Fitting model to feature number 413, decanoylcarnitine (C10)
+2023-06-18 11:51:30.989642 INFO::Fitting model to feature number 414, dehydroepiandrosterone sulfate (DHEA-S)
+2023-06-18 11:51:31.122949 INFO::Fitting model to feature number 415, delta-CEHC
+2023-06-18 11:51:31.132308 WARNING::Fitting problem for feature 415 returning NA
+2023-06-18 11:51:31.13331 INFO::Fitting model to feature number 416, delta-CEHC glucuronide
+2023-06-18 11:51:31.143248 WARNING::Fitting problem for feature 416 returning NA
+2023-06-18 11:51:31.14403 INFO::Fitting model to feature number 417, deoxycarnitine
+2023-06-18 11:51:31.611384 INFO::Fitting model to feature number 418, deoxycholate
+2023-06-18 11:51:31.670538 INFO::Fitting model to feature number 419, deoxycholic acid 12-sulfate*
+2023-06-18 11:51:31.713135 INFO::Fitting model to feature number 420, deoxycholic acid glucuronide
+2023-06-18 11:51:31.748767 INFO::Fitting model to feature number 421, dibutyl sulfosuccinate
+2023-06-18 11:51:31.884398 INFO::Fitting model to feature number 422, dihomolinoleate (20:2n6)
+2023-06-18 11:51:32.528284 INFO::Fitting model to feature number 423, dihomolinolenate (20:3n3 or 3n6)
+2023-06-18 11:51:32.923569 INFO::Fitting model to feature number 424, dihydrocaffeate sulfate (2)
+2023-06-18 11:51:32.934475 WARNING::Fitting problem for feature 424 returning NA
+2023-06-18 11:51:32.935455 INFO::Fitting model to feature number 425, dihydroferulate
+2023-06-18 11:51:32.983521 INFO::Fitting model to feature number 426, dihydroferulic acid sulfate
+2023-06-18 11:51:32.994058 WARNING::Fitting problem for feature 426 returning NA
+2023-06-18 11:51:32.99481 INFO::Fitting model to feature number 427, dihydroorotate
+2023-06-18 11:51:33.050967 INFO::Fitting model to feature number 428, dimethyl sulfone
+2023-06-18 11:51:33.062219 WARNING::Fitting problem for feature 428 returning NA
+2023-06-18 11:51:33.063082 INFO::Fitting model to feature number 429, dimethylarginine (ADMA + SDMA)
+2023-06-18 11:51:35.250238 INFO::Fitting model to feature number 430, dimethylglycine
+2023-06-18 11:51:35.612957 INFO::Fitting model to feature number 431, docosadienoate (22:2n6)
+2023-06-18 11:51:35.697391 INFO::Fitting model to feature number 432, docosadioate (C22-DC)
+2023-06-18 11:51:35.73413 INFO::Fitting model to feature number 433, docosahexaenoate (DHA; 22:6n3)
+2023-06-18 11:51:36.804803 INFO::Fitting model to feature number 434, docosahexaenoylcholine
+2023-06-18 11:51:36.814263 WARNING::Fitting problem for feature 434 returning NA
+2023-06-18 11:51:36.81531 INFO::Fitting model to feature number 435, docosapentaenoate (DPA; 22:5n3)
+2023-06-18 11:51:37.356659 INFO::Fitting model to feature number 436, docosapentaenoate (n6 DPA; 22:5n6)
+2023-06-18 11:51:37.622284 INFO::Fitting model to feature number 437, dodecadienoate (12:2)*
+2023-06-18 11:51:37.813666 INFO::Fitting model to feature number 438, dodecanedioate (C12)
+2023-06-18 11:51:37.977806 INFO::Fitting model to feature number 439, dodecenedioate (C12:1-DC)*
+2023-06-18 11:51:38.147497 INFO::Fitting model to feature number 440, dopamine 3-O-sulfate
+2023-06-18 11:51:38.187928 INFO::Fitting model to feature number 441, eicosanedioate (C20-DC)
+2023-06-18 11:51:38.348846 INFO::Fitting model to feature number 442, eicosapentaenoate (EPA; 20:5n3)
+2023-06-18 11:51:38.539333 INFO::Fitting model to feature number 443, eicosenedioate (C20:1-DC)*
+2023-06-18 11:51:38.578929 INFO::Fitting model to feature number 444, eicosenoate (20:1n9 or 1n11)
+2023-06-18 11:51:39.024001 INFO::Fitting model to feature number 445, epiandrosterone sulfate
+2023-06-18 11:51:39.151355 INFO::Fitting model to feature number 446, equol sulfate
+2023-06-18 11:51:39.16535 WARNING::Fitting problem for feature 446 returning NA
+2023-06-18 11:51:39.16617 INFO::Fitting model to feature number 447, ergothioneine
+2023-06-18 11:51:39.2606 INFO::Fitting model to feature number 448, erythritol
+2023-06-18 11:51:39.343918 INFO::Fitting model to feature number 449, erythronate*
+2023-06-18 11:51:42.196385 INFO::Fitting model to feature number 450, estrone 3-sulfate
+2023-06-18 11:51:42.206774 WARNING::Fitting problem for feature 450 returning NA
+2023-06-18 11:51:42.208207 INFO::Fitting model to feature number 451, ethyl alpha-glucopyranoside
+2023-06-18 11:51:42.251632 INFO::Fitting model to feature number 452, ethyl beta-glucopyranoside
+2023-06-18 11:51:42.311114 INFO::Fitting model to feature number 453, ethylmalonate
+2023-06-18 11:51:42.544066 INFO::Fitting model to feature number 454, ethylparaben sulfate
+2023-06-18 11:51:42.599779 INFO::Fitting model to feature number 455, etiocholanolone glucuronide
+2023-06-18 11:51:42.644465 INFO::Fitting model to feature number 456, eugenol sulfate
+2023-06-18 11:51:42.70816 INFO::Fitting model to feature number 457, ferulic acid 4-sulfate
+2023-06-18 11:51:42.739997 INFO::Fitting model to feature number 458, Fibrinopeptide A (2-15)
+2023-06-18 11:51:42.857746 INFO::Fitting model to feature number 459, Fibrinopeptide A (3-15)
+2023-06-18 11:51:43.010331 INFO::Fitting model to feature number 460, Fibrinopeptide A (3-16)
+2023-06-18 11:51:43.058554 INFO::Fitting model to feature number 461, Fibrinopeptide A (4-15)
+2023-06-18 11:51:43.098289 INFO::Fitting model to feature number 462, Fibrinopeptide A (5-16)*
+2023-06-18 11:51:43.147582 INFO::Fitting model to feature number 463, Fibrinopeptide A (7-16)*
+2023-06-18 11:51:43.209213 INFO::Fitting model to feature number 464, Fibrinopeptide A (8-16)
+2023-06-18 11:51:43.249638 INFO::Fitting model to feature number 465, ADSGEGDFXAEGGGVR*
+2023-06-18 11:51:43.257744 WARNING::Fitting problem for feature 465 returning NA
+2023-06-18 11:51:43.258567 INFO::Fitting model to feature number 466, DSGEGDFXAEGGGVR*
+2023-06-18 11:51:43.342801 INFO::Fitting model to feature number 467, ADpSGEGDFXAEGGGVR*
+2023-06-18 11:51:43.351754 WARNING::Fitting problem for feature 467 returning NA
+2023-06-18 11:51:43.352458 INFO::Fitting model to feature number 468, Fibrinopeptide B (1-11)
+2023-06-18 11:51:43.472408 INFO::Fitting model to feature number 469, Fibrinopeptide B (1-12)
+2023-06-18 11:51:43.50435 INFO::Fitting model to feature number 470, Fibrinopeptide B (1-13)
+2023-06-18 11:51:43.597878 INFO::Fitting model to feature number 471, Fibrinopeptide B (1-9)
+2023-06-18 11:51:43.634997 INFO::Fitting model to feature number 472, formiminoglutamate
+2023-06-18 11:51:43.671082 INFO::Fitting model to feature number 473, fructose
+2023-06-18 11:51:43.745641 INFO::Fitting model to feature number 474, fructosyllysine
+2023-06-18 11:51:45.246718 INFO::Fitting model to feature number 475, fumarate
+2023-06-18 11:51:45.340063 INFO::Fitting model to feature number 476, galactonate
+2023-06-18 11:51:45.490694 INFO::Fitting model to feature number 477, gamma-CEHC
+2023-06-18 11:51:45.551342 INFO::Fitting model to feature number 478, gamma-CEHC glucuronide*
+2023-06-18 11:51:45.588872 INFO::Fitting model to feature number 479, gamma-CEHC sulfate
+2023-06-18 11:51:45.599937 WARNING::Fitting problem for feature 479 returning NA
+2023-06-18 11:51:45.600915 INFO::Fitting model to feature number 480, gamma-glutamyl-2-aminobutyrate
+2023-06-18 11:51:45.884384 INFO::Fitting model to feature number 481, gamma-glutamylalanine
+2023-06-18 11:51:45.977105 INFO::Fitting model to feature number 482, gamma-glutamyl-alpha-lysine
+2023-06-18 11:51:46.185358 INFO::Fitting model to feature number 483, gamma-glutamylcitrulline*
+2023-06-18 11:51:46.197921 WARNING::Fitting problem for feature 483 returning NA
+2023-06-18 11:51:46.199109 INFO::Fitting model to feature number 484, gamma-glutamyl-epsilon-lysine
+2023-06-18 11:51:46.378749 INFO::Fitting model to feature number 485, gamma-glutamylglutamate
+2023-06-18 11:51:46.388916 WARNING::Fitting problem for feature 485 returning NA
+2023-06-18 11:51:46.389787 INFO::Fitting model to feature number 486, gamma-glutamylglutamine
+2023-06-18 11:51:46.69336 INFO::Fitting model to feature number 487, gamma-glutamylglycine
+2023-06-18 11:51:46.851281 INFO::Fitting model to feature number 488, gamma-glutamylhistidine
+2023-06-18 11:51:47.079377 INFO::Fitting model to feature number 489, gamma-glutamylisoleucine*
+2023-06-18 11:51:47.261244 INFO::Fitting model to feature number 490, gamma-glutamylleucine
+2023-06-18 11:51:47.444579 INFO::Fitting model to feature number 491, gamma-glutamylmethionine
+2023-06-18 11:51:47.550415 INFO::Fitting model to feature number 492, gamma-glutamylphenylalanine
+2023-06-18 11:51:47.67587 INFO::Fitting model to feature number 493, gamma-glutamylserine
+2023-06-18 11:51:47.943666 WARNING::Fitting problem for feature 493 returning NA
+2023-06-18 11:51:47.944717 INFO::Fitting model to feature number 494, gamma-glutamylthreonine
+2023-06-18 11:51:48.157121 INFO::Fitting model to feature number 495, gamma-glutamyltryptophan
+2023-06-18 11:51:48.167138 WARNING::Fitting problem for feature 495 returning NA
+2023-06-18 11:51:48.168095 INFO::Fitting model to feature number 496, gamma-glutamyltyrosine
+2023-06-18 11:51:48.238367 INFO::Fitting model to feature number 497, gamma-glutamylvaline
+2023-06-18 11:51:48.624746 INFO::Fitting model to feature number 498, gamma-tocopherol/beta-tocopherol
+2023-06-18 11:51:48.82898 INFO::Fitting model to feature number 499, genistein sulfate*
+2023-06-18 11:51:48.935065 INFO::Fitting model to feature number 500, GlcNAc sulfate conjugate of C21H34O2 steroid
+2023-06-18 11:51:48.971708 INFO::Fitting model to feature number 501, gluconate
+2023-06-18 11:51:49.872147 INFO::Fitting model to feature number 502, glucose
+2023-06-18 11:51:53.508705 INFO::Fitting model to feature number 503, glucuronate
+2023-06-18 11:51:54.025826 INFO::Fitting model to feature number 504, glucuronide of C10H18O2 (7)*
+2023-06-18 11:51:54.038 WARNING::Fitting problem for feature 504 returning NA
+2023-06-18 11:51:54.038919 INFO::Fitting model to feature number 505, glucuronide of C10H18O2 (8)*
+2023-06-18 11:51:54.050015 WARNING::Fitting problem for feature 505 returning NA
+2023-06-18 11:51:54.050865 INFO::Fitting model to feature number 506, glucuronide of C12H22O4 (1)*
+2023-06-18 11:51:54.062149 WARNING::Fitting problem for feature 506 returning NA
+2023-06-18 11:51:54.063653 INFO::Fitting model to feature number 507, glu-gly-asn-val
+2023-06-18 11:51:54.135173 INFO::Fitting model to feature number 508, glutamate
+2023-06-18 11:51:56.745708 INFO::Fitting model to feature number 509, glutamine
+2023-06-18 11:52:02.383304 INFO::Fitting model to feature number 510, glutamine conjugate of C6H10O2 (1)*
+2023-06-18 11:52:02.438844 INFO::Fitting model to feature number 511, glutamine conjugate of C6H10O2 (2)*
+2023-06-18 11:52:02.528038 INFO::Fitting model to feature number 512, glutamine conjugate of C8H12O4 (1)*
+2023-06-18 11:52:02.563005 INFO::Fitting model to feature number 513, glutarate (C5-DC)
+2023-06-18 11:52:02.89694 INFO::Fitting model to feature number 514, glutarylcarnitine (C5-DC)
+2023-06-18 11:52:03.08746 INFO::Fitting model to feature number 515, glycerate
+2023-06-18 11:52:04.0513 INFO::Fitting model to feature number 516, glycerol
+2023-06-18 11:52:04.509996 INFO::Fitting model to feature number 517, glycerol 3-phosphate
+2023-06-18 11:52:04.548805 INFO::Fitting model to feature number 518, glycerophosphoethanolamine
+2023-06-18 11:52:05.033494 INFO::Fitting model to feature number 519, glycerophosphoglycerol
+2023-06-18 11:52:05.116419 INFO::Fitting model to feature number 520, glycerophosphoinositol*
+2023-06-18 11:52:05.301427 INFO::Fitting model to feature number 521, glycerophosphorylcholine (GPC)
+2023-06-18 11:52:08.029928 INFO::Fitting model to feature number 522, glycerophosphoserine*
+2023-06-18 11:52:08.066621 INFO::Fitting model to feature number 523, glycine
+2023-06-18 11:52:10.355331 INFO::Fitting model to feature number 524, glycine conjugate of C10H14O2 (1)*
+2023-06-18 11:52:10.365868 WARNING::Fitting problem for feature 524 returning NA
+2023-06-18 11:52:10.367049 INFO::Fitting model to feature number 525, glycitein sulfate (2)
+2023-06-18 11:52:10.410168 INFO::Fitting model to feature number 526, glyco-beta-muricholate
+2023-06-18 11:52:10.453974 INFO::Fitting model to feature number 527, glycochenodeoxycholate
+2023-06-18 11:52:10.544706 INFO::Fitting model to feature number 528, glycochenodeoxycholate 3-sulfate
+2023-06-18 11:52:10.784726 INFO::Fitting model to feature number 529, glycochenodeoxycholate glucuronide (1)
+2023-06-18 11:52:10.844612 INFO::Fitting model to feature number 530, glycocholate
+2023-06-18 11:52:11.003233 INFO::Fitting model to feature number 531, glycocholenate sulfate*
+2023-06-18 11:52:11.143822 INFO::Fitting model to feature number 532, glycodeoxycholate
+2023-06-18 11:52:11.213091 INFO::Fitting model to feature number 533, glycodeoxycholate 3-sulfate
+2023-06-18 11:52:11.314198 INFO::Fitting model to feature number 534, glycohyocholate
+2023-06-18 11:52:11.349177 INFO::Fitting model to feature number 535, glycolithocholate sulfate*
+2023-06-18 11:52:11.417332 INFO::Fitting model to feature number 536, glycosyl-N-palmitoyl-sphingosine (d18:1/16:0)
+2023-06-18 11:52:11.783218 INFO::Fitting model to feature number 537, glycoursodeoxycholate
+2023-06-18 11:52:12.46923 WARNING::Fitting problem for feature 537 returning NA
+2023-06-18 11:52:12.470335 INFO::Fitting model to feature number 538, glycoursodeoxycholic acid sulfate (1)
+2023-06-18 11:52:13.343461 WARNING::Fitting problem for feature 538 returning NA
+2023-06-18 11:52:13.34484 INFO::Fitting model to feature number 539, glycoursodeoxycholic acid sulfate (2)
+2023-06-18 11:52:13.388358 INFO::Fitting model to feature number 540, glycylvaline
+2023-06-18 11:52:13.529207 INFO::Fitting model to feature number 541, guaiacol sulfate
+2023-06-18 11:52:13.581057 INFO::Fitting model to feature number 542, guanidinoacetate
+2023-06-18 11:52:13.58945 WARNING::Fitting problem for feature 542 returning NA
+2023-06-18 11:52:13.590398 INFO::Fitting model to feature number 543, guanidinosuccinate
+2023-06-18 11:52:13.604151 WARNING::Fitting problem for feature 543 returning NA
+2023-06-18 11:52:13.60494 INFO::Fitting model to feature number 544, guanosine
+2023-06-18 11:52:13.640876 INFO::Fitting model to feature number 545, gulonate*
+2023-06-18 11:52:13.960125 INFO::Fitting model to feature number 546, heneicosapentaenoate (21:5n3)
+2023-06-18 11:52:13.972015 WARNING::Fitting problem for feature 546 returning NA
+2023-06-18 11:52:13.972966 INFO::Fitting model to feature number 547, heptanoate (7:0)
+2023-06-18 11:52:14.173114 INFO::Fitting model to feature number 548, heptenedioate (C7:1-DC)*
+2023-06-18 11:52:14.287599 INFO::Fitting model to feature number 549, hexadecadienoate (16:2n6)
+2023-06-18 11:52:14.535863 INFO::Fitting model to feature number 550, hexadecanedioate (C16)
+2023-06-18 11:52:14.632484 INFO::Fitting model to feature number 551, hexadecenedioate (C16:1-DC)*
+2023-06-18 11:52:14.691148 INFO::Fitting model to feature number 552, hexanoylcarnitine (C6)
+2023-06-18 11:52:14.925081 INFO::Fitting model to feature number 553, hexanoylglutamine
+2023-06-18 11:52:15.040492 INFO::Fitting model to feature number 554, hexanoylglycine (C6)
+2023-06-18 11:52:15.050259 WARNING::Fitting problem for feature 554 returning NA
+2023-06-18 11:52:15.051287 INFO::Fitting model to feature number 555, hippurate
+2023-06-18 11:52:15.182043 INFO::Fitting model to feature number 556, histidine
+2023-06-18 11:52:15.227945 INFO::Fitting model to feature number 557, histidine betaine (hercynine)*
+2023-06-18 11:52:15.445073 INFO::Fitting model to feature number 558, histidylalanine
+2023-06-18 11:52:15.454722 WARNING::Fitting problem for feature 558 returning NA
+2023-06-18 11:52:15.455545 INFO::Fitting model to feature number 559, homoarginine
+2023-06-18 11:52:15.484844 INFO::Fitting model to feature number 560, homocitrulline
+2023-06-18 11:52:15.555408 INFO::Fitting model to feature number 561, homostachydrine*
+2023-06-18 11:52:15.631939 INFO::Fitting model to feature number 562, hydantoin-5-propionate
+2023-06-18 11:52:15.780141 INFO::Fitting model to feature number 563, hydroquinone sulfate
+2023-06-18 11:52:15.89462 INFO::Fitting model to feature number 564, hydroxyasparagine
+2023-06-18 11:52:15.999195 INFO::Fitting model to feature number 565, hydroxy-CMPF*
+2023-06-18 11:52:16.097028 INFO::Fitting model to feature number 566, hydroxy-N6,N6,N6-trimethyllysine*
+2023-06-18 11:52:16.348643 INFO::Fitting model to feature number 567, hydroxypalmitoyl sphingomyelin (d18:1/16:0(OH))
+2023-06-18 11:52:16.550462 INFO::Fitting model to feature number 568, hyocholate
+2023-06-18 11:52:16.560673 WARNING::Fitting problem for feature 568 returning NA
+2023-06-18 11:52:16.561648 INFO::Fitting model to feature number 569, hypotaurine
+2023-06-18 11:52:16.606066 INFO::Fitting model to feature number 570, hypoxanthine
+2023-06-18 11:52:16.734606 INFO::Fitting model to feature number 571, imidazole lactate
+2023-06-18 11:52:17.089575 INFO::Fitting model to feature number 572, imidazole propionate
+2023-06-18 11:52:17.235423 INFO::Fitting model to feature number 573, iminodiacetate (IDA)
+2023-06-18 11:52:17.332092 INFO::Fitting model to feature number 574, indole-3-carboxylate
+2023-06-18 11:52:17.413499 INFO::Fitting model to feature number 575, indoleacetate
+2023-06-18 11:52:17.495876 INFO::Fitting model to feature number 576, indoleacetylglutamine
+2023-06-18 11:52:17.508466 WARNING::Fitting problem for feature 576 returning NA
+2023-06-18 11:52:17.509359 INFO::Fitting model to feature number 577, indolelactate
+2023-06-18 11:52:17.873678 INFO::Fitting model to feature number 578, indolepropionate
+2023-06-18 11:52:18.021474 INFO::Fitting model to feature number 579, inosine
+2023-06-18 11:52:18.134778 INFO::Fitting model to feature number 580, isobutyrylcarnitine (C4)
+2023-06-18 11:52:18.505797 INFO::Fitting model to feature number 581, isobutyrylglycine (C4)
+2023-06-18 11:52:18.727125 INFO::Fitting model to feature number 582, isocaproate (i6:0)
+2023-06-18 11:52:18.802843 INFO::Fitting model to feature number 583, isoleucine
+2023-06-18 11:52:20.004833 INFO::Fitting model to feature number 584, isoursodeoxycholate
+2023-06-18 11:52:20.094856 INFO::Fitting model to feature number 585, isoursodeoxycholate sulfate (1)
+2023-06-18 11:52:20.138102 INFO::Fitting model to feature number 586, isoursodeoxycholate sulfate (2)
+2023-06-18 11:52:20.179651 INFO::Fitting model to feature number 587, isovalerate (C5)
+2023-06-18 11:52:20.842367 INFO::Fitting model to feature number 588, isovalerylcarnitine (C5)
+2023-06-18 11:52:21.144943 INFO::Fitting model to feature number 589, isovalerylglycine
+2023-06-18 11:52:21.338328 INFO::Fitting model to feature number 590, kynurenate
+2023-06-18 11:52:21.49155 INFO::Fitting model to feature number 591, kynurenine
+2023-06-18 11:52:21.855579 INFO::Fitting model to feature number 592, lactate
+2023-06-18 11:52:25.631613 INFO::Fitting model to feature number 593, lactobacillic acid
+2023-06-18 11:52:25.742622 INFO::Fitting model to feature number 594, lactosyl-N-palmitoyl-sphingosine (d18:1/16:0)
+2023-06-18 11:52:26.137496 INFO::Fitting model to feature number 595, lanthionine
+2023-06-18 11:52:26.179146 INFO::Fitting model to feature number 596, laurate (12:0)
+2023-06-18 11:52:27.189215 INFO::Fitting model to feature number 597, laurylcarnitine (C12)
+2023-06-18 11:52:27.19945 WARNING::Fitting problem for feature 597 returning NA
+2023-06-18 11:52:27.20063 INFO::Fitting model to feature number 598, leucine
+2023-06-18 11:52:29.159594 INFO::Fitting model to feature number 599, leucylalanine
+2023-06-18 11:52:29.204299 INFO::Fitting model to feature number 600, leucylglycine
+2023-06-18 11:52:29.215206 WARNING::Fitting problem for feature 600 returning NA
+2023-06-18 11:52:29.217493 INFO::Fitting model to feature number 601, leukotriene B4
+2023-06-18 11:52:29.29726 INFO::Fitting model to feature number 602, levulinate (4-oxovalerate)
+2023-06-18 11:52:29.374189 INFO::Fitting model to feature number 603, lignoceroyl sphingomyelin (d18:1/24:0)
+2023-06-18 11:52:31.102682 INFO::Fitting model to feature number 604, linoleate (18:2n6)
+2023-06-18 11:52:35.106062 INFO::Fitting model to feature number 605, linolenate (18:3n3 or 3n6)
+2023-06-18 11:52:36.365587 INFO::Fitting model to feature number 606, linoleoyl-arachidonoyl-glycerol (18:2/20:4) [1]*
+2023-06-18 11:52:36.376407 WARNING::Fitting problem for feature 606 returning NA
+2023-06-18 11:52:36.377557 INFO::Fitting model to feature number 607, linoleoyl-arachidonoyl-glycerol (18:2/20:4) [2]*
+2023-06-18 11:52:36.387011 WARNING::Fitting problem for feature 607 returning NA
+2023-06-18 11:52:36.387851 INFO::Fitting model to feature number 608, linoleoylcarnitine (C18:2)*
+2023-06-18 11:52:36.549851 INFO::Fitting model to feature number 609, linoleoylcholine*
+2023-06-18 11:52:36.611776 INFO::Fitting model to feature number 610, linoleoyl-linoleoyl-glycerol (18:2/18:2) [1]*
+2023-06-18 11:52:36.621766 WARNING::Fitting problem for feature 610 returning NA
+2023-06-18 11:52:36.623674 INFO::Fitting model to feature number 611, linoleoyl-linoleoyl-glycerol (18:2/18:2) [2]*
+2023-06-18 11:52:36.718618 INFO::Fitting model to feature number 612, lithocholate sulfate (1)
+2023-06-18 11:52:36.75731 INFO::Fitting model to feature number 613, lopinavir
+2023-06-18 11:52:36.772911 WARNING::Fitting problem for feature 613 returning NA
+2023-06-18 11:52:36.773829 INFO::Fitting model to feature number 614, lysine
+2023-06-18 11:52:39.560881 INFO::Fitting model to feature number 615, malate
+2023-06-18 11:52:40.097595 INFO::Fitting model to feature number 616, maleate
+2023-06-18 11:52:40.133936 INFO::Fitting model to feature number 617, maltose
+2023-06-18 11:52:40.243112 INFO::Fitting model to feature number 618, mannitol/sorbitol
+2023-06-18 11:52:40.416149 INFO::Fitting model to feature number 619, mannonate*
+2023-06-18 11:52:40.950394 INFO::Fitting model to feature number 620, mannose
+2023-06-18 11:52:41.133165 INFO::Fitting model to feature number 621, margarate (17:0)
+2023-06-18 11:52:42.151512 INFO::Fitting model to feature number 622, mead acid (20:3n9)
+2023-06-18 11:52:42.194711 INFO::Fitting model to feature number 623, metabolonic lactone sulfate
+2023-06-18 11:52:42.26953 INFO::Fitting model to feature number 624, methionine
+2023-06-18 11:52:44.708919 INFO::Fitting model to feature number 625, methionine sulfone
+2023-06-18 11:52:44.776659 INFO::Fitting model to feature number 626, methionine sulfoxide
+2023-06-18 11:52:45.83648 INFO::Fitting model to feature number 627, methyl glucopyranoside (alpha + beta)
+2023-06-18 11:52:45.897658 INFO::Fitting model to feature number 628, methyl-4-hydroxybenzoate sulfate
+2023-06-18 11:52:45.942596 INFO::Fitting model to feature number 629, methylmalonate (MMA)
+2023-06-18 11:52:45.952681 WARNING::Fitting problem for feature 629 returning NA
+2023-06-18 11:52:45.953773 INFO::Fitting model to feature number 630, methylnaphthyl sulfate (2)*
+2023-06-18 11:52:45.989193 INFO::Fitting model to feature number 631, methylsuccinate
+2023-06-18 11:52:46.099302 INFO::Fitting model to feature number 632, methylsuccinoylcarnitine
+2023-06-18 11:52:46.108237 WARNING::Fitting problem for feature 632 returning NA
+2023-06-18 11:52:46.109078 INFO::Fitting model to feature number 633, moxifloxacin
+2023-06-18 11:52:46.12076 WARNING::Fitting problem for feature 633 returning NA
+2023-06-18 11:52:46.121503 INFO::Fitting model to feature number 634, myo-inositol
+2023-06-18 11:52:46.63635 INFO::Fitting model to feature number 635, myristate (14:0)
+2023-06-18 11:52:48.01129 INFO::Fitting model to feature number 636, myristoleate (14:1n5)
+2023-06-18 11:52:48.303067 INFO::Fitting model to feature number 637, myristoleoylcarnitine (C14:1)*
+2023-06-18 11:52:48.580508 INFO::Fitting model to feature number 638, myristoyl dihydrosphingomyelin (d18:0/14:0)*
+2023-06-18 11:52:48.589308 WARNING::Fitting problem for feature 638 returning NA
+2023-06-18 11:52:48.590185 INFO::Fitting model to feature number 639, myristoylcarnitine (C14)
+2023-06-18 11:52:48.597153 WARNING::Fitting problem for feature 639 returning NA
+2023-06-18 11:52:48.597883 INFO::Fitting model to feature number 640, N(1)-acetylspermidine
+2023-06-18 11:52:48.738671 INFO::Fitting model to feature number 641, N-(2-furoyl)glycine
+2023-06-18 11:52:48.748514 WARNING::Fitting problem for feature 641 returning NA
+2023-06-18 11:52:48.749278 INFO::Fitting model to feature number 642, N,N,N-trimethyl-5-aminovalerate
+2023-06-18 11:52:49.232964 INFO::Fitting model to feature number 643, N,N,N-trimethyl-alanylproline betaine (TMAP)
+2023-06-18 11:52:50.220265 INFO::Fitting model to feature number 644, N,N-dimethyl-5-aminovalerate
+2023-06-18 11:52:50.297834 INFO::Fitting model to feature number 645, N,N-dimethylalanine
+2023-06-18 11:52:50.376465 WARNING::Fitting problem for feature 645 returning NA
+2023-06-18 11:52:50.377571 INFO::Fitting model to feature number 646, N,N-dimethyl-pro-pro
+2023-06-18 11:52:50.737774 INFO::Fitting model to feature number 647, N1-Methyl-2-pyridone-5-carboxamide
+2023-06-18 11:52:50.896402 INFO::Fitting model to feature number 648, 1-methyladenosine
+2023-06-18 11:52:51.149902 INFO::Fitting model to feature number 649, N1-methylinosine
+2023-06-18 11:52:51.16071 WARNING::Fitting problem for feature 649 returning NA
+2023-06-18 11:52:51.161773 INFO::Fitting model to feature number 650, N2,N2-dimethylguanosine
+2023-06-18 11:52:51.245094 INFO::Fitting model to feature number 651, N2,N5-diacetylornithine
+2023-06-18 11:52:51.302912 INFO::Fitting model to feature number 652, N2-acetyl,N6,N6-dimethyllysine
+2023-06-18 11:52:51.426283 INFO::Fitting model to feature number 653, N2-acetyl,N6-methyllysine
+2023-06-18 11:52:51.457513 INFO::Fitting model to feature number 654, N2-acetyllysine
+2023-06-18 11:52:51.466796 WARNING::Fitting problem for feature 654 returning NA
+2023-06-18 11:52:51.467657 INFO::Fitting model to feature number 655, N2-methylguanosine
+2023-06-18 11:52:51.476436 WARNING::Fitting problem for feature 655 returning NA
+2023-06-18 11:52:51.477253 INFO::Fitting model to feature number 656, N6,N6,N6-trimethyllysine
+2023-06-18 11:52:52.2955 INFO::Fitting model to feature number 657, N6,N6-dimethyllysine
+2023-06-18 11:52:52.30667 WARNING::Fitting problem for feature 657 returning NA
+2023-06-18 11:52:52.307636 INFO::Fitting model to feature number 658, N6-acetyllysine
+2023-06-18 11:52:52.522745 INFO::Fitting model to feature number 659, N6-carbamoylthreonyladenosine
+2023-06-18 11:52:52.595349 INFO::Fitting model to feature number 660, N6-carboxymethyllysine
+2023-06-18 11:52:52.690406 INFO::Fitting model to feature number 661, N6-methyladenosine
+2023-06-18 11:52:53.030605 INFO::Fitting model to feature number 662, N6-methyllysine
+2023-06-18 11:52:53.268976 INFO::Fitting model to feature number 663, N6-succinyladenosine
+2023-06-18 11:52:53.327484 INFO::Fitting model to feature number 664, N-acetyl-1-methylhistidine*
+2023-06-18 11:52:53.42734 INFO::Fitting model to feature number 665, N-acetyl-2-aminoadipate
+2023-06-18 11:52:53.518542 INFO::Fitting model to feature number 666, N-acetyl-2-aminooctanoate*
+2023-06-18 11:52:53.557344 INFO::Fitting model to feature number 667, N-acetylalanine
+2023-06-18 11:52:54.399276 INFO::Fitting model to feature number 668, N-acetylalliin
+2023-06-18 11:52:54.440485 INFO::Fitting model to feature number 669, N-acetylarginine
+2023-06-18 11:52:54.597592 INFO::Fitting model to feature number 670, N-acetylasparagine
+2023-06-18 11:52:55.773044 WARNING::Fitting problem for feature 670 returning NA
+2023-06-18 11:52:55.77519 INFO::Fitting model to feature number 671, N-acetylaspartate (NAA)
+2023-06-18 11:52:55.86382 INFO::Fitting model to feature number 672, N-acetyl-aspartyl-glutamate (NAAG)
+2023-06-18 11:52:55.903791 INFO::Fitting model to feature number 673, N-acetyl-beta-alanine
+2023-06-18 11:52:55.952591 INFO::Fitting model to feature number 674, N-acetyl-cadaverine
+2023-06-18 11:52:56.03306 INFO::Fitting model to feature number 675, N-acetylcarnosine
+2023-06-18 11:52:56.202075 INFO::Fitting model to feature number 676, N-acetylcitrulline
+2023-06-18 11:52:56.241117 INFO::Fitting model to feature number 677, N-acetylglucosamine/N-acetylgalactosamine
+2023-06-18 11:52:56.249783 WARNING::Fitting problem for feature 677 returning NA
+2023-06-18 11:52:56.250577 INFO::Fitting model to feature number 678, N-acetylglucosaminylasparagine
+2023-06-18 11:52:56.259428 WARNING::Fitting problem for feature 678 returning NA
+2023-06-18 11:52:56.260182 INFO::Fitting model to feature number 679, N-acetylglutamate
+2023-06-18 11:52:56.318284 INFO::Fitting model to feature number 680, N-acetylglutamine
+2023-06-18 11:52:56.418317 INFO::Fitting model to feature number 681, N-acetylglycine
+2023-06-18 11:52:56.670707 INFO::Fitting model to feature number 682, N-acetylhistamine
+2023-06-18 11:52:56.707839 INFO::Fitting model to feature number 683, N-acetylhistidine
+2023-06-18 11:52:56.752058 INFO::Fitting model to feature number 684, N-acetylisoleucine
+2023-06-18 11:52:56.813478 INFO::Fitting model to feature number 685, N-acetyl-isoputreanine
+2023-06-18 11:52:57.400312 INFO::Fitting model to feature number 686, N-acetylkynurenine (2)
+2023-06-18 11:52:57.502495 INFO::Fitting model to feature number 687, N-acetylleucine
+2023-06-18 11:52:57.609547 INFO::Fitting model to feature number 688, N-acetylmethionine
+2023-06-18 11:52:57.687738 INFO::Fitting model to feature number 689, N-acetylmethionine sulfoxide
+2023-06-18 11:52:57.735592 INFO::Fitting model to feature number 690, N-acetylneuraminate
+2023-06-18 11:52:57.875763 INFO::Fitting model to feature number 691, N-acetylphenylalanine
+2023-06-18 11:52:58.028085 INFO::Fitting model to feature number 692, N-acetylproline
+2023-06-18 11:52:58.327991 INFO::Fitting model to feature number 693, N-acetylputrescine
+2023-06-18 11:52:58.427461 INFO::Fitting model to feature number 694, N-acetylserine
+2023-06-18 11:52:58.83465 INFO::Fitting model to feature number 695, N-acetyltaurine
+2023-06-18 11:52:58.996863 INFO::Fitting model to feature number 696, N-acetyltheanine
+2023-06-18 11:52:59.00876 WARNING::Fitting problem for feature 696 returning NA
+2023-06-18 11:52:59.009857 INFO::Fitting model to feature number 697, N-acetylthreonine
+2023-06-18 11:52:59.282561 INFO::Fitting model to feature number 698, N-acetyltryptophan
+2023-06-18 11:52:59.359062 INFO::Fitting model to feature number 699, N-acetyltyrosine
+2023-06-18 11:52:59.504113 INFO::Fitting model to feature number 700, N-acetylvaline
+2023-06-18 11:52:59.647212 INFO::Fitting model to feature number 701, N-alpha-acetylornithine
+2023-06-18 11:52:59.728996 INFO::Fitting model to feature number 702, N-behenoyl-sphingadienine (d18:2/22:0)*
+2023-06-18 11:52:59.738872 WARNING::Fitting problem for feature 702 returning NA
+2023-06-18 11:52:59.739787 INFO::Fitting model to feature number 703, N-carbamoylalanine
+2023-06-18 11:52:59.839605 INFO::Fitting model to feature number 704, N-carbamoylvaline
+2023-06-18 11:52:59.912391 INFO::Fitting model to feature number 705, N-delta-acetylornithine
+2023-06-18 11:52:59.985025 INFO::Fitting model to feature number 706, N-formylanthranilic acid
+2023-06-18 11:53:00.052889 INFO::Fitting model to feature number 707, N-formylkynurenine
+2023-06-18 11:53:00.220888 INFO::Fitting model to feature number 708, N-formylmethionine
+2023-06-18 11:53:00.405705 INFO::Fitting model to feature number 709, N-formylphenylalanine
+2023-06-18 11:53:01.101735 INFO::Fitting model to feature number 710, nicotinamide
+2023-06-18 11:53:01.197305 INFO::Fitting model to feature number 711, nicotinamide riboside
+2023-06-18 11:53:01.309053 INFO::Fitting model to feature number 712, nisinate (24:6n3)
+2023-06-18 11:53:01.361384 INFO::Fitting model to feature number 713, N-linoleoylglycine
+2023-06-18 11:53:01.372278 WARNING::Fitting problem for feature 713 returning NA
+2023-06-18 11:53:01.373245 INFO::Fitting model to feature number 714, N-linoleoylserine*
+2023-06-18 11:53:01.453374 INFO::Fitting model to feature number 715, N-linoleoyltaurine*
+2023-06-18 11:53:01.46254 WARNING::Fitting problem for feature 715 returning NA
+2023-06-18 11:53:01.463339 INFO::Fitting model to feature number 716, N-methylhydroxyproline
+2023-06-18 11:53:01.533866 INFO::Fitting model to feature number 717, N-methylproline
+2023-06-18 11:53:01.659847 INFO::Fitting model to feature number 718, N-oleoylserine
+2023-06-18 11:53:01.74695 INFO::Fitting model to feature number 719, N-oleoyltaurine
+2023-06-18 11:53:01.755694 WARNING::Fitting problem for feature 719 returning NA
+2023-06-18 11:53:01.756637 INFO::Fitting model to feature number 720, nonadecanoate (19:0)
+2023-06-18 11:53:02.060198 INFO::Fitting model to feature number 721, N-palmitoylglycine
+2023-06-18 11:53:02.15676 INFO::Fitting model to feature number 722, N-palmitoylserine
+2023-06-18 11:53:02.231362 INFO::Fitting model to feature number 723, N-palmitoyl-sphingosine (d18:1/16:0)
+2023-06-18 11:53:02.648949 INFO::Fitting model to feature number 724, N-palmitoyltaurine
+2023-06-18 11:53:02.658957 WARNING::Fitting problem for feature 724 returning NA
+2023-06-18 11:53:02.659889 INFO::Fitting model to feature number 725, N-stearoylserine*
+2023-06-18 11:53:02.729642 INFO::Fitting model to feature number 726, N-stearoyl-sphingosine (d18:1/18:0)*
+2023-06-18 11:53:02.7382 WARNING::Fitting problem for feature 726 returning NA
+2023-06-18 11:53:02.739055 INFO::Fitting model to feature number 727, N-stearoyltaurine
+2023-06-18 11:53:02.746709 WARNING::Fitting problem for feature 727 returning NA
+2023-06-18 11:53:02.747453 INFO::Fitting model to feature number 728, o-cresol sulfate
+2023-06-18 11:53:02.755698 WARNING::Fitting problem for feature 728 returning NA
+2023-06-18 11:53:02.756579 INFO::Fitting model to feature number 729, octadecadienedioate (C18:2-DC)*
+2023-06-18 11:53:02.852012 INFO::Fitting model to feature number 730, octadecanedioate (C18)
+2023-06-18 11:53:03.09867 INFO::Fitting model to feature number 731, octadecenedioate (C18:1-DC)
+2023-06-18 11:53:03.323143 INFO::Fitting model to feature number 732, octanoylcarnitine (C8)
+2023-06-18 11:53:03.453542 INFO::Fitting model to feature number 733, ofloxacin
+2023-06-18 11:53:03.468044 WARNING::Fitting problem for feature 733 returning NA
+2023-06-18 11:53:03.469012 INFO::Fitting model to feature number 734, oleate/vaccenate (18:1)
+2023-06-18 11:53:07.627376 INFO::Fitting model to feature number 735, oleoyl ethanolamide
+2023-06-18 11:53:07.703402 INFO::Fitting model to feature number 736, oleoylcarnitine (C18:1)
+2023-06-18 11:53:07.888961 INFO::Fitting model to feature number 737, oleoylcholine
+2023-06-18 11:53:07.897228 WARNING::Fitting problem for feature 737 returning NA
+2023-06-18 11:53:07.916981 INFO::Fitting model to feature number 738, oleoyl-linoleoyl-glycerol (18:1/18:2) [2]
+2023-06-18 11:53:07.927694 WARNING::Fitting problem for feature 738 returning NA
+2023-06-18 11:53:07.928772 INFO::Fitting model to feature number 739, ornithine
+2023-06-18 11:53:10.407447 INFO::Fitting model to feature number 740, orotate
+2023-06-18 11:53:10.663741 INFO::Fitting model to feature number 741, orotidine
+2023-06-18 11:53:10.756164 INFO::Fitting model to feature number 742, O-sulfo-L-tyrosine
+2023-06-18 11:53:10.861243 INFO::Fitting model to feature number 743, oxalate (ethanedioate)
+2023-06-18 11:53:10.957029 INFO::Fitting model to feature number 744, oxindolylalanine
+2023-06-18 11:53:11.090906 INFO::Fitting model to feature number 745, palmitate (16:0)
+2023-06-18 11:53:22.435583 INFO::Fitting model to feature number 746, palmitoleate (16:1n7)
+2023-06-18 11:53:23.819863 INFO::Fitting model to feature number 747, palmitoleoylcarnitine (C16:1)*
+2023-06-18 11:53:23.874704 INFO::Fitting model to feature number 748, palmitoyl dihydrosphingomyelin (d18:0/16:0)*
+2023-06-18 11:53:24.439132 INFO::Fitting model to feature number 749, palmitoyl ethanolamide
+2023-06-18 11:53:24.522244 INFO::Fitting model to feature number 750, palmitoyl sphingomyelin (d18:1/16:0)
+2023-06-18 11:53:28.729497 INFO::Fitting model to feature number 751, palmitoylcarnitine (C16)
+2023-06-18 11:53:28.944106 INFO::Fitting model to feature number 752, palmitoylcholine
+2023-06-18 11:53:28.981855 INFO::Fitting model to feature number 753, palmitoyl-sphingosine-phosphoethanolamine (d18:1/16:0)
+2023-06-18 11:53:28.992241 WARNING::Fitting problem for feature 753 returning NA
+2023-06-18 11:53:28.993515 INFO::Fitting model to feature number 754, pantothenate (Vitamin B5)
+2023-06-18 11:53:29.24099 INFO::Fitting model to feature number 755, paraxanthine
+2023-06-18 11:53:29.284223 INFO::Fitting model to feature number 756, p-cresol glucuronide*
+2023-06-18 11:53:29.424125 INFO::Fitting model to feature number 757, p-cresol sulfate
+2023-06-18 11:53:29.729794 INFO::Fitting model to feature number 758, pelargonate (9:0)
+2023-06-18 11:53:30.589083 INFO::Fitting model to feature number 759, pentadecanoate (15:0)
+2023-06-18 11:53:31.289338 INFO::Fitting model to feature number 760, pentose acid*
+2023-06-18 11:53:31.377189 INFO::Fitting model to feature number 761, perfluorooctanesulfonate (PFOS)
+2023-06-18 11:53:31.558952 INFO::Fitting model to feature number 762, perfluorooctanoate (PFOA)
+2023-06-18 11:53:31.643504 INFO::Fitting model to feature number 763, phenol sulfate
+2023-06-18 11:53:32.354166 INFO::Fitting model to feature number 764, phenylacetate
+2023-06-18 11:53:32.410462 INFO::Fitting model to feature number 765, phenylacetylglutamate
+2023-06-18 11:53:32.421779 WARNING::Fitting problem for feature 765 returning NA
+2023-06-18 11:53:32.422733 INFO::Fitting model to feature number 766, phenylacetylglutamine
+2023-06-18 11:53:32.54422 INFO::Fitting model to feature number 767, phenylalanine
+2023-06-18 11:53:42.845594 INFO::Fitting model to feature number 768, phenyllactate (PLA)
+2023-06-18 11:53:42.959809 INFO::Fitting model to feature number 769, phenylpyruvate
+2023-06-18 11:53:43.032844 INFO::Fitting model to feature number 770, phosphate
+2023-06-18 11:53:43.222599 INFO::Fitting model to feature number 771, phytanate
+2023-06-18 11:53:43.34853 INFO::Fitting model to feature number 772, picolinate
+2023-06-18 11:53:43.357937 WARNING::Fitting problem for feature 772 returning NA
+2023-06-18 11:53:43.358938 INFO::Fitting model to feature number 773, pimelate (C7-DC)
+2023-06-18 11:53:43.367422 WARNING::Fitting problem for feature 773 returning NA
+2023-06-18 11:53:43.368422 INFO::Fitting model to feature number 774, pimeloylcarnitine/3-methyladipoylcarnitine (C7-DC)
+2023-06-18 11:53:43.41203 INFO::Fitting model to feature number 775, pipecolate
+2023-06-18 11:53:43.464563 INFO::Fitting model to feature number 776, piperine
+2023-06-18 11:53:43.512999 INFO::Fitting model to feature number 777, pregnanediol-3-glucuronide
+2023-06-18 11:53:43.545999 INFO::Fitting model to feature number 778, pregnanolone/allopregnanolone sulfate
+2023-06-18 11:53:43.602776 INFO::Fitting model to feature number 779, pregnen-diol disulfate*
+2023-06-18 11:53:43.967354 INFO::Fitting model to feature number 780, pregnenediol sulfate (C21H34O5S)*
+2023-06-18 11:53:44.348817 INFO::Fitting model to feature number 781, pregnenetriol disulfate*
+2023-06-18 11:53:44.501061 INFO::Fitting model to feature number 782, pregnenetriol sulfate*
+2023-06-18 11:53:44.699555 INFO::Fitting model to feature number 783, pregnenolone sulfate
+2023-06-18 11:53:44.815644 INFO::Fitting model to feature number 784, prolylhydroxyproline
+2023-06-18 11:53:45.013135 INFO::Fitting model to feature number 785, proline
+2023-06-18 11:53:49.760946 INFO::Fitting model to feature number 786, prolylglycine
+2023-06-18 11:53:49.799707 INFO::Fitting model to feature number 787, propionylcarnitine (C3)
+2023-06-18 11:53:50.177521 INFO::Fitting model to feature number 788, propionylglycine (C3)
+2023-06-18 11:53:50.233386 INFO::Fitting model to feature number 789, propyl 4-hydroxybenzoate
+2023-06-18 11:53:50.24368 WARNING::Fitting problem for feature 789 returning NA
+2023-06-18 11:53:50.244736 INFO::Fitting model to feature number 790, pseudouridine
+2023-06-18 11:53:50.740238 INFO::Fitting model to feature number 791, pyridoxate
+2023-06-18 11:53:51.154265 WARNING::Fitting problem for feature 791 returning NA
+2023-06-18 11:53:51.155565 INFO::Fitting model to feature number 792, pyroglutamine*
+2023-06-18 11:53:51.877582 INFO::Fitting model to feature number 793, pyruvate
+2023-06-18 11:53:51.973332 INFO::Fitting model to feature number 794, quinate
+2023-06-18 11:53:52.111211 INFO::Fitting model to feature number 795, quinolinate
+2023-06-18 11:53:52.256557 INFO::Fitting model to feature number 796, retinol (Vitamin A)
+2023-06-18 11:53:52.349265 INFO::Fitting model to feature number 797, ribitol
+2023-06-18 11:53:52.448782 INFO::Fitting model to feature number 798, ribonate
+2023-06-18 11:53:53.219439 INFO::Fitting model to feature number 799, ribose
+2023-06-18 11:53:53.230085 WARNING::Fitting problem for feature 799 returning NA
+2023-06-18 11:53:53.231092 INFO::Fitting model to feature number 800, ribulonate/xylulonate/lyxonate*
+2023-06-18 11:53:53.664244 INFO::Fitting model to feature number 801, S-1-pyrroline-5-carboxylate
+2023-06-18 11:53:53.856268 INFO::Fitting model to feature number 802, saccharin
+2023-06-18 11:53:53.86578 WARNING::Fitting problem for feature 802 returning NA
+2023-06-18 11:53:53.866642 INFO::Fitting model to feature number 803, salicylate
+2023-06-18 11:53:54.055298 INFO::Fitting model to feature number 804, S-allylcysteine
+2023-06-18 11:53:54.163955 INFO::Fitting model to feature number 805, sarcosine
+2023-06-18 11:53:54.357491 INFO::Fitting model to feature number 806, S-carboxyethylcysteine
+2023-06-18 11:53:54.464637 INFO::Fitting model to feature number 807, sebacate (C10-DC)
+2023-06-18 11:53:54.576413 INFO::Fitting model to feature number 808, sedoheptulose
+2023-06-18 11:53:54.586134 WARNING::Fitting problem for feature 808 returning NA
+2023-06-18 11:53:54.587032 INFO::Fitting model to feature number 809, serine
+2023-06-18 11:53:56.99813 INFO::Fitting model to feature number 810, serotonin
+2023-06-18 11:53:57.043357 INFO::Fitting model to feature number 811, S-methylcysteine
+2023-06-18 11:53:57.092092 INFO::Fitting model to feature number 812, S-methylcysteine sulfoxide
+2023-06-18 11:53:57.217494 INFO::Fitting model to feature number 813, S-methylmethionine
+2023-06-18 11:53:57.376528 INFO::Fitting model to feature number 814, spermidine
+2023-06-18 11:53:57.426299 INFO::Fitting model to feature number 815, sphinganine
+2023-06-18 11:53:57.435076 WARNING::Fitting problem for feature 815 returning NA
+2023-06-18 11:53:57.435893 INFO::Fitting model to feature number 816, sphingomyelin (d17:1/16:0, d18:1/15:0, d16:1/17:0)*
+2023-06-18 11:53:57.871508 INFO::Fitting model to feature number 817, sphingomyelin (d18:0/18:0, d19:0/17:0)*
+2023-06-18 11:53:58.012186 INFO::Fitting model to feature number 818, sphingomyelin (d18:0/20:0, d16:0/22:0)*
+2023-06-18 11:53:58.086377 INFO::Fitting model to feature number 819, sphingomyelin (d18:1/14:0, d16:1/16:0)*
+2023-06-18 11:53:58.886234 INFO::Fitting model to feature number 820, sphingomyelin (d18:1/17:0, d17:1/18:0, d19:1/16:0)
+2023-06-18 11:53:59.313491 INFO::Fitting model to feature number 821, sphingomyelin (d18:1/18:1, d18:2/18:0)
+2023-06-18 11:54:00.3229 INFO::Fitting model to feature number 822, sphingomyelin (d18:1/19:0, d19:1/18:0)*
+2023-06-18 11:54:00.483755 INFO::Fitting model to feature number 823, sphingomyelin (d18:1/20:0, d16:1/22:0)*
+2023-06-18 11:54:01.805401 INFO::Fitting model to feature number 824, sphingomyelin (d18:1/20:1, d18:2/20:0)*
+2023-06-18 11:54:02.244868 INFO::Fitting model to feature number 825, sphingomyelin (d18:1/20:2, d18:2/20:1, d16:1/22:2)*
+2023-06-18 11:54:02.253526 WARNING::Fitting problem for feature 825 returning NA
+2023-06-18 11:54:02.254436 INFO::Fitting model to feature number 826, sphingomyelin (d18:1/21:0, d17:1/22:0, d16:1/23:0)*
+2023-06-18 11:54:02.629429 INFO::Fitting model to feature number 827, sphingomyelin (d18:1/22:1, d18:2/22:0, d16:1/24:1)*
+2023-06-18 11:54:04.035348 INFO::Fitting model to feature number 828, sphingomyelin (d18:1/22:2, d18:2/22:1, d16:1/24:2)*
+2023-06-18 11:54:04.353681 INFO::Fitting model to feature number 829, sphingomyelin (d18:1/24:1, d18:2/24:0)*
+2023-06-18 11:54:07.288753 INFO::Fitting model to feature number 830, sphingomyelin (d18:2/14:0, d18:1/14:1)*
+2023-06-18 11:54:07.594517 INFO::Fitting model to feature number 831, sphingomyelin (d18:2/16:0, d18:1/16:1)*
+2023-06-18 11:54:08.880145 INFO::Fitting model to feature number 832, sphingomyelin (d18:2/18:1)*
+2023-06-18 11:54:08.96778 INFO::Fitting model to feature number 833, sphingomyelin (d18:2/21:0, d16:2/23:0)*
+2023-06-18 11:54:09.168299 INFO::Fitting model to feature number 834, sphingomyelin (d18:2/23:0, d18:1/23:1, d17:1/24:1)*
+2023-06-18 11:54:09.906819 INFO::Fitting model to feature number 835, sphingomyelin (d18:2/23:1)*
+2023-06-18 11:54:09.950208 INFO::Fitting model to feature number 836, sphingomyelin (d18:2/24:1, d18:1/24:2)*
+2023-06-18 11:54:11.487321 INFO::Fitting model to feature number 837, sphingomyelin (d18:2/24:2)*
+2023-06-18 11:54:12.016355 INFO::Fitting model to feature number 838, sphingosine
+2023-06-18 11:54:12.025799 WARNING::Fitting problem for feature 838 returning NA
+2023-06-18 11:54:12.026732 INFO::Fitting model to feature number 839, sphingosine 1-phosphate
+2023-06-18 11:54:12.139255 INFO::Fitting model to feature number 840, stachydrine
+2023-06-18 11:54:12.587844 INFO::Fitting model to feature number 841, stearate (18:0)
+2023-06-18 11:54:24.278592 INFO::Fitting model to feature number 842, stearidonate (18:4n3)
+2023-06-18 11:54:24.357659 INFO::Fitting model to feature number 843, stearoyl ethanolamide
+2023-06-18 11:54:24.366047 WARNING::Fitting problem for feature 843 returning NA
+2023-06-18 11:54:24.366949 INFO::Fitting model to feature number 844, stearoyl sphingomyelin (d18:1/18:0)
+2023-06-18 11:54:25.554904 INFO::Fitting model to feature number 845, stearoylcarnitine (C18)
+2023-06-18 11:54:25.608524 INFO::Fitting model to feature number 846, stearoylcholine*
+2023-06-18 11:54:25.621482 WARNING::Fitting problem for feature 846 returning NA
+2023-06-18 11:54:25.622961 INFO::Fitting model to feature number 847, suberate (C8-DC)
+2023-06-18 11:54:25.744791 INFO::Fitting model to feature number 848, suberoylcarnitine (C8-DC)
+2023-06-18 11:54:25.792745 INFO::Fitting model to feature number 849, succinate
+2023-06-18 11:54:26.07037 INFO::Fitting model to feature number 850, succinoyltaurine
+2023-06-18 11:54:26.112686 INFO::Fitting model to feature number 851, succinylcarnitine (C4-DC)
+2023-06-18 11:54:26.174869 INFO::Fitting model to feature number 852, sucrose
+2023-06-18 11:54:26.243892 INFO::Fitting model to feature number 853, sulfate of piperine metabolite C16H19NO3 (2)*
+2023-06-18 11:54:26.315303 INFO::Fitting model to feature number 854, sulfate*
+2023-06-18 11:54:27.342212 INFO::Fitting model to feature number 855, tartarate
+2023-06-18 11:54:27.397675 INFO::Fitting model to feature number 856, tartronate (hydroxymalonate)
+2023-06-18 11:54:27.486132 INFO::Fitting model to feature number 857, taurine
+2023-06-18 11:54:28.480065 INFO::Fitting model to feature number 858, tauro-beta-muricholate
+2023-06-18 11:54:28.495344 WARNING::Fitting problem for feature 858 returning NA
+2023-06-18 11:54:28.496275 INFO::Fitting model to feature number 859, taurochenodeoxycholate
+2023-06-18 11:54:28.790361 INFO::Fitting model to feature number 860, taurochenodeoxycholic acid 3-sulfate
+2023-06-18 11:54:28.929879 INFO::Fitting model to feature number 861, taurocholate
+2023-06-18 11:54:29.129051 INFO::Fitting model to feature number 862, taurocholenate sulfate*
+2023-06-18 11:54:29.194638 INFO::Fitting model to feature number 863, taurodeoxycholate
+2023-06-18 11:54:29.263468 INFO::Fitting model to feature number 864, taurodeoxycholic acid 3-sulfate
+2023-06-18 11:54:29.30117 INFO::Fitting model to feature number 865, taurolithocholate 3-sulfate
+2023-06-18 11:54:29.369936 INFO::Fitting model to feature number 866, tauroursodeoxycholate
+2023-06-18 11:54:29.624632 INFO::Fitting model to feature number 867, tauroursodeoxycholic acid sulfate (1)
+2023-06-18 11:54:29.705668 INFO::Fitting model to feature number 868, tetradecadienedioate (C14:2-DC)*
+2023-06-18 11:54:29.756065 INFO::Fitting model to feature number 869, tetradecadienoate (14:2)*
+2023-06-18 11:54:29.917146 INFO::Fitting model to feature number 870, tetradecanedioate (C14)
+2023-06-18 11:54:29.974707 INFO::Fitting model to feature number 871, tetrahydrocortisol glucuronide
+2023-06-18 11:54:30.048514 INFO::Fitting model to feature number 872, tetrahydrocortisol sulfate (1)
+2023-06-18 11:54:30.077842 INFO::Fitting model to feature number 873, tetrahydrocortisone glucuronide (5)
+2023-06-18 11:54:30.085669 WARNING::Fitting problem for feature 873 returning NA
+2023-06-18 11:54:30.086494 INFO::Fitting model to feature number 874, theanine
+2023-06-18 11:54:30.131485 INFO::Fitting model to feature number 875, theobromine
+2023-06-18 11:54:30.165198 INFO::Fitting model to feature number 876, theophylline
+2023-06-18 11:54:30.210042 INFO::Fitting model to feature number 877, thioproline
+2023-06-18 11:54:30.2846 INFO::Fitting model to feature number 878, threonate
+2023-06-18 11:54:31.099694 INFO::Fitting model to feature number 879, threonine
+2023-06-18 11:54:33.408416 INFO::Fitting model to feature number 880, threonylphenylalanine
+2023-06-18 11:54:33.453474 INFO::Fitting model to feature number 881, thymol sulfate
+2023-06-18 11:54:33.526275 INFO::Fitting model to feature number 882, thyroxine
+2023-06-18 11:54:33.577558 INFO::Fitting model to feature number 883, tigloylglycine
+2023-06-18 11:54:33.62467 INFO::Fitting model to feature number 884, tiglyl carnitine (C5)
+2023-06-18 11:54:33.896033 INFO::Fitting model to feature number 885, trans-3,4-methyleneheptanoate
+2023-06-18 11:54:33.963542 INFO::Fitting model to feature number 886, hydroxyproline
+2023-06-18 11:54:34.292267 INFO::Fitting model to feature number 887, trans-urocanate
+2023-06-18 11:54:34.359322 INFO::Fitting model to feature number 888, tricosanoyl sphingomyelin (d18:1/23:0)*
+2023-06-18 11:54:35.332521 INFO::Fitting model to feature number 889, tridecenedioate (C13:1-DC)*
+2023-06-18 11:54:35.44073 INFO::Fitting model to feature number 890, trigonelline (N-methylnicotinate)
+2023-06-18 11:54:35.511838 INFO::Fitting model to feature number 891, trimethylamine N-oxide
+2023-06-18 11:54:35.964078 INFO::Fitting model to feature number 892, trizma acetate
+2023-06-18 11:54:36.059486 INFO::Fitting model to feature number 893, tryptophan
+2023-06-18 11:54:39.521551 INFO::Fitting model to feature number 894, tryptophan betaine
+2023-06-18 11:54:39.935735 INFO::Fitting model to feature number 895, tyramine O-sulfate
+2023-06-18 11:54:39.994095 INFO::Fitting model to feature number 896, tyrosine
+2023-06-18 11:54:42.157513 INFO::Fitting model to feature number 897, undecanedioate (C11-DC)
+2023-06-18 11:54:42.239412 INFO::Fitting model to feature number 898, undecanoate (11:0)
+2023-06-18 11:54:42.785529 INFO::Fitting model to feature number 899, undecenoylcarnitine (C11:1)
+2023-06-18 11:54:42.874195 INFO::Fitting model to feature number 900, uracil
+2023-06-18 11:54:42.886064 WARNING::Fitting problem for feature 900 returning NA
+2023-06-18 11:54:42.889672 INFO::Fitting model to feature number 901, urate
+2023-06-18 11:54:43.42324 INFO::Fitting model to feature number 902, urea
+2023-06-18 11:54:46.090294 INFO::Fitting model to feature number 903, uridine
+2023-06-18 11:54:46.864931 INFO::Fitting model to feature number 904, ursodeoxycholate
+2023-06-18 11:54:47.25362 INFO::Fitting model to feature number 905, valerate (5:0)
+2023-06-18 11:54:47.304314 INFO::Fitting model to feature number 906, valine
+2023-06-18 11:54:52.144256 INFO::Fitting model to feature number 907, valylglycine
+2023-06-18 11:54:52.27205 INFO::Fitting model to feature number 908, vanillactate
+2023-06-18 11:54:52.586911 INFO::Fitting model to feature number 909, vanillic acid glycine
+2023-06-18 11:54:52.641756 INFO::Fitting model to feature number 910, vanillic alcohol sulfate
+2023-06-18 11:54:52.69939 INFO::Fitting model to feature number 911, vanillylmandelate (VMA)
+2023-06-18 11:54:52.764596 INFO::Fitting model to feature number 912, xanthine
+2023-06-18 11:54:53.334704 INFO::Fitting model to feature number 913, xanthosine
+2023-06-18 11:54:53.343395 WARNING::Fitting problem for feature 913 returning NA
+2023-06-18 11:54:53.344375 INFO::Fitting model to feature number 914, xanthurenate
+2023-06-18 11:54:53.353976 WARNING::Fitting problem for feature 914 returning NA
+2023-06-18 11:54:53.460921 INFO::Counting prevalence for each feature
+2023-06-18 11:54:53.596193 INFO::Writing all results to file (ordered by increasing q-values): analysis/my_metabolites_Tweedieverse/all_results.tsv
+2023-06-18 11:54:53.616669 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.100000 ) to file (ordered by increasing q-values): analysis/my_metabolites_Tweedieverse/significant_results.tsv
+2023-06-18 11:54:53.621497 INFO::Writing Tweedie inxed plot to file: analysis/my_metabolites_Tweedieverse
+2023-06-18 11:54:53.622408 INFO::Plotting tweedie.index  colored by metadata
+2023-06-18 11:54:53.622964 INFO::Plotting tweedie.index
+2023-06-18 11:54:53.644136 ERROR::Unable to do make a Tweedie inxed plot of results!!!
+2023-06-18 11:54:53.645101 ERROR::err: could not find function "aes"
+ 2023-06-18 11:54:53.645101 ERROR::err: aes(x = tweedie.index)
+2023-06-18 11:54:53.646137 INFO::Writing association plots (one for each significant association) to output folder: analysis/my_metabolites_Tweedieverse
+2023-06-18 11:54:53.683861 INFO::Plotting associations from most to least significant, grouped by metadata
+2023-06-18 11:54:53.684955 INFO::Plotting data for metadata number 1, Group
+2023-06-18 11:54:53.685922 INFO::Creating boxplot for categorical data, Group vs benzoate

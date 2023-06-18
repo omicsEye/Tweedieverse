@@ -73,42 +73,59 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="fullcontent">
+<body>
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Biomarkers and Pathways for COVID-19</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
 
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Biomarkers and Pathways for COVID-19</h1>
+      <div>
+      <div class="quarto-title-meta-heading">Authors</div>
+      <div class="quarto-title-meta-contents">
+               <p>Ali Rahnavard </p>
+               <p>Chiraag Gohel </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#tweedieverse" id="toc-tweedieverse" class="nav-link" data-scroll-target="#tweedieverse">Tweedieverse</a>
+  <ul class="collapse">
+  <li><a href="#running-tweedieverse" id="toc-running-tweedieverse" class="nav-link" data-scroll-target="#running-tweedieverse">Running Tweedieverse</a></li>
+  </ul></li>
+  <li><a href="#omepath" id="toc-omepath" class="nav-link" data-scroll-target="#omepath">omePath</a></li>
+  </ul>
+</nav>
 </div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Authors</div>
-    <div class="quarto-title-meta-contents">
-             <p>Ali Rahnavard </p>
-             <p>Chiraag Gohel </p>
-          </div>
-  </div>
-    
-  
-    
-  </div>
-  
-
-</header>
 
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <ol type="1">
-<li>Create a new R Project</li>
+<li>Pull this repository from <a href="https://github.com/omicsEye/Tweedieverse">GitHub</a></li>
+<li>Open <code>Tweedieverse.Rproj</code> to open the project</li>
 <li>Within that R Project, create a directory titled <code>data/</code></li>
 <li>Save the required data files for this vignette to that directory from <a href="https://www.dropbox.com/sh/gy2ul4h36ko5rne/AADpGXEyNbYmL-0ujJzCbyUYa?dl=0">here</a></li>
+<li>Create a new R script to follow along!</li>
 </ol>
 </section>
 <section id="tweedieverse" class="level2">
@@ -213,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>score_data_severe <span class="ot">&lt;-</span> score_data_severe[<span class="sc">!</span><span class="fu">is.na</span>(score_data_severe<span class="sc">$</span>HMDB) <span class="sc">&amp;</span> score_data_severe<span class="sc">$</span>feature <span class="sc">!=</span><span class="st">"2-hydroxyhippurate (salicylurate)"</span>,]</span>
 <span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(score_data_severe) <span class="ot">&lt;-</span> score_data_severe<span class="sc">$</span>HMDB</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>We then run <code>omePath()</code>, specifying various parameters.</p>
+<p>We then run <code>omePath()</code>, specifying various parameters. <code>omePath</code> can take a while to run! We have provided the results already in the <code>analysis</code> folder.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">omePath</span>(</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">input_data =</span> score_data_severe,</span>

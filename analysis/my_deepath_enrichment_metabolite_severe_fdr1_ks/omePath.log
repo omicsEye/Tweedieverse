@@ -1,0 +1,14 @@
+2023-06-18 12:15:47.98984 INFO::Writing function arguments to log file
+2023-06-18 12:15:47.990958 DEBUG::Function arguments
+2023-06-18 12:15:47.991224 DEBUG::Output folder: analysis/my_deepath_enrichment_metabolite_severe_fdr1_ks
+2023-06-18 12:15:47.991446 DEBUG::Score type: coef
+2023-06-18 12:15:47.991674 DEBUG::p-value threshold: 0.05
+2023-06-18 12:15:47.991895 DEBUG::Pathway subject: NA
+2023-06-18 12:15:47.9921 INFO::Verifying options selected are valid
+2023-06-18 12:15:47.992833 WARNING::Deleting existing stats table file: analysis/my_deepath_enrichment_metabolite_severe_fdr1_ks/stats_table.tsv
+2023-06-18 12:15:47.994384 INFO::Writing stats table to file analysis/my_deepath_enrichment_metabolite_severe_fdr1_ks/stats_table.tsv
+2023-06-18 12:15:47.998146 INFO::Running selected analysis method: ks
+2023-06-18 12:15:50.493011 INFO::Loading files is done, now calculating enrichments p-value! This may take 10 or more minutes!!!
+2023-06-18 12:22:01.528709 INFO::Writing enrichment stats table to file analysis/my_deepath_enrichment_metabolite_severe_fdr1_ks/enrichment_stats.tsv
+2023-06-18 12:22:04.206648 INFO::Plotting data for feature, enrichment
+2023-06-18 12:22:38.398159 INFO::Writing enrichment plots (one for each significant association) to output folder: analysis/my_deepath_enrichment_metabolite_severe_fdr1_ks
