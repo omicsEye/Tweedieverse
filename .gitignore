@@ -5,6 +5,8 @@
 # Session Data files
 .RData
 
+data/
+analysis/
 # User-specific files
 .Ruserdata
 
@@ -37,3 +39,4 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+.Rproj.user
